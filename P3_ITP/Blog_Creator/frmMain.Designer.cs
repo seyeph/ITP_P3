@@ -82,10 +82,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider1Con.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1Con.Depth = 0;
-            this.materialDivider1Con.Location = new System.Drawing.Point(202, 16);
+            this.materialDivider1Con.Location = new System.Drawing.Point(152, 13);
+            this.materialDivider1Con.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialDivider1Con.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1Con.Name = "materialDivider1Con";
-            this.materialDivider1Con.Size = new System.Drawing.Size(692, 1);
+            this.materialDivider1Con.Size = new System.Drawing.Size(519, 1);
             this.materialDivider1Con.TabIndex = 1;
             this.materialDivider1Con.Text = "materialDivider1Con";
             // 
@@ -98,11 +99,12 @@
             this.tabControlMain.Controls.Add(this.tabProcedure);
             this.tabControlMain.Controls.Add(this.tabProtocol);
             this.tabControlMain.Depth = 0;
-            this.tabControlMain.Location = new System.Drawing.Point(12, 149);
+            this.tabControlMain.Location = new System.Drawing.Point(9, 121);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControlMain.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(908, 547);
+            this.tabControlMain.Size = new System.Drawing.Size(681, 444);
             this.tabControlMain.TabIndex = 18;
             // 
             // tabConnection
@@ -111,10 +113,11 @@
             this.tabConnection.Controls.Add(this.grpStatusCOM);
             this.tabConnection.Controls.Add(this.grpPort);
             this.tabConnection.Controls.Add(this.materialDivider1Con);
-            this.tabConnection.Location = new System.Drawing.Point(4, 25);
+            this.tabConnection.Location = new System.Drawing.Point(4, 22);
+            this.tabConnection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabConnection.Name = "tabConnection";
-            this.tabConnection.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConnection.Size = new System.Drawing.Size(900, 518);
+            this.tabConnection.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabConnection.Size = new System.Drawing.Size(673, 418);
             this.tabConnection.TabIndex = 0;
             this.tabConnection.Text = "Verbindung";
             this.tabConnection.UseVisualStyleBackColor = true;
@@ -126,19 +129,21 @@
             this.flowActionButtonsCon.Controls.Add(this.cmdOpenPort);
             this.flowActionButtonsCon.Controls.Add(this.cmdClosePort);
             this.flowActionButtonsCon.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowActionButtonsCon.Location = new System.Drawing.Point(202, 22);
+            this.flowActionButtonsCon.Location = new System.Drawing.Point(152, 18);
+            this.flowActionButtonsCon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowActionButtonsCon.Name = "flowActionButtonsCon";
-            this.flowActionButtonsCon.Size = new System.Drawing.Size(692, 94);
+            this.flowActionButtonsCon.Size = new System.Drawing.Size(519, 76);
             this.flowActionButtonsCon.TabIndex = 3;
             // 
             // cmdOpenPort
             // 
             this.cmdOpenPort.Depth = 0;
-            this.cmdOpenPort.Location = new System.Drawing.Point(350, 3);
+            this.cmdOpenPort.Location = new System.Drawing.Point(263, 2);
+            this.cmdOpenPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
             this.cmdOpenPort.Primary = true;
-            this.cmdOpenPort.Size = new System.Drawing.Size(339, 94);
+            this.cmdOpenPort.Size = new System.Drawing.Size(254, 76);
             this.cmdOpenPort.TabIndex = 4;
             this.cmdOpenPort.Text = "Port öffnen";
             this.cmdOpenPort.UseVisualStyleBackColor = true;
@@ -148,11 +153,12 @@
             // 
             this.cmdClosePort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdClosePort.Depth = 0;
-            this.cmdClosePort.Location = new System.Drawing.Point(3, 3);
+            this.cmdClosePort.Location = new System.Drawing.Point(3, 2);
+            this.cmdClosePort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
             this.cmdClosePort.Primary = true;
-            this.cmdClosePort.Size = new System.Drawing.Size(341, 94);
+            this.cmdClosePort.Size = new System.Drawing.Size(256, 76);
             this.cmdClosePort.TabIndex = 5;
             this.cmdClosePort.Text = "Port schließen";
             this.cmdClosePort.UseVisualStyleBackColor = true;
@@ -166,10 +172,11 @@
             this.grpStatusCOM.Controls.Add(this.rtxtStatus);
             this.grpStatusCOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpStatusCOM.ForeColor = System.Drawing.Color.White;
-            this.grpStatusCOM.Location = new System.Drawing.Point(202, 122);
+            this.grpStatusCOM.Location = new System.Drawing.Point(152, 99);
+            this.grpStatusCOM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpStatusCOM.Name = "grpStatusCOM";
-            this.grpStatusCOM.Padding = new System.Windows.Forms.Padding(15);
-            this.grpStatusCOM.Size = new System.Drawing.Size(689, 393);
+            this.grpStatusCOM.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.grpStatusCOM.Size = new System.Drawing.Size(517, 319);
             this.grpStatusCOM.TabIndex = 7;
             this.grpStatusCOM.TabStop = false;
             this.grpStatusCOM.Text = "COM - Port Status";
@@ -183,10 +190,11 @@
             this.rtxtStatus.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtStatus.ForeColor = System.Drawing.Color.White;
             this.rtxtStatus.HideSelection = false;
-            this.rtxtStatus.Location = new System.Drawing.Point(18, 33);
+            this.rtxtStatus.Location = new System.Drawing.Point(14, 27);
+            this.rtxtStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtxtStatus.Name = "rtxtStatus";
             this.rtxtStatus.ReadOnly = true;
-            this.rtxtStatus.Size = new System.Drawing.Size(653, 342);
+            this.rtxtStatus.Size = new System.Drawing.Size(491, 279);
             this.rtxtStatus.TabIndex = 0;
             this.rtxtStatus.Text = "";
             // 
@@ -197,9 +205,11 @@
             this.grpPort.Controls.Add(this.cboPorts);
             this.grpPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpPort.ForeColor = System.Drawing.Color.White;
-            this.grpPort.Location = new System.Drawing.Point(6, 6);
+            this.grpPort.Location = new System.Drawing.Point(4, 5);
+            this.grpPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpPort.Name = "grpPort";
-            this.grpPort.Size = new System.Drawing.Size(190, 509);
+            this.grpPort.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpPort.Size = new System.Drawing.Size(142, 414);
             this.grpPort.TabIndex = 3;
             this.grpPort.TabStop = false;
             this.grpPort.Text = "COM - Port";
@@ -207,9 +217,10 @@
             // cboPorts
             // 
             this.cboPorts.FormattingEnabled = true;
-            this.cboPorts.Location = new System.Drawing.Point(19, 27);
+            this.cboPorts.Location = new System.Drawing.Point(14, 22);
+            this.cboPorts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboPorts.Name = "cboPorts";
-            this.cboPorts.Size = new System.Drawing.Size(149, 30);
+            this.cboPorts.Size = new System.Drawing.Size(113, 25);
             this.cboPorts.TabIndex = 2;
             // 
             // tabProcedure
@@ -228,10 +239,11 @@
             this.tabProcedure.Controls.Add(this.lblInfo5000);
             this.tabProcedure.Controls.Add(this.lblInfoDelay);
             this.tabProcedure.Controls.Add(this.sliderTime);
-            this.tabProcedure.Location = new System.Drawing.Point(4, 25);
+            this.tabProcedure.Location = new System.Drawing.Point(4, 22);
+            this.tabProcedure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabProcedure.Name = "tabProcedure";
-            this.tabProcedure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProcedure.Size = new System.Drawing.Size(900, 518);
+            this.tabProcedure.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProcedure.Size = new System.Drawing.Size(673, 418);
             this.tabProcedure.TabIndex = 1;
             this.tabProcedure.Text = "Programm";
             this.tabProcedure.UseVisualStyleBackColor = true;
@@ -243,9 +255,10 @@
             this.lblWarningConn.BackColor = System.Drawing.Color.Moccasin;
             this.lblWarningConn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarningConn.ForeColor = System.Drawing.Color.Red;
-            this.lblWarningConn.Location = new System.Drawing.Point(688, 93);
+            this.lblWarningConn.Location = new System.Drawing.Point(516, 76);
+            this.lblWarningConn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWarningConn.Name = "lblWarningConn";
-            this.lblWarningConn.Size = new System.Drawing.Size(206, 29);
+            this.lblWarningConn.Size = new System.Drawing.Size(164, 24);
             this.lblWarningConn.TabIndex = 20;
             this.lblWarningConn.Text = "Keine Verbindung";
             this.lblWarningConn.Visible = false;
@@ -256,9 +269,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(815, 46);
+            this.button1.Location = new System.Drawing.Point(611, 37);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 38);
+            this.button1.Size = new System.Drawing.Size(59, 31);
             this.button1.TabIndex = 29;
             this.button1.Text = "▲";
             this.button1.UseVisualStyleBackColor = false;
@@ -270,9 +284,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWebserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWebserver.ForeColor = System.Drawing.Color.Gray;
-            this.txtWebserver.Location = new System.Drawing.Point(10, 6);
+            this.txtWebserver.Location = new System.Drawing.Point(8, 5);
+            this.txtWebserver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWebserver.Name = "txtWebserver";
-            this.txtWebserver.Size = new System.Drawing.Size(884, 34);
+            this.txtWebserver.Size = new System.Drawing.Size(664, 28);
             this.txtWebserver.TabIndex = 28;
             this.txtWebserver.Text = "ftp://my.webserver.at/test.txt";
             this.txtWebserver.Enter += new System.EventHandler(this.txtWebserver_Enter);
@@ -283,11 +298,12 @@
             this.cmdEndProgram.Depth = 0;
             this.cmdEndProgram.Enabled = false;
             this.cmdEndProgram.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEndProgram.Location = new System.Drawing.Point(295, 46);
+            this.cmdEndProgram.Location = new System.Drawing.Point(221, 37);
+            this.cmdEndProgram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdEndProgram.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdEndProgram.Name = "cmdEndProgram";
             this.cmdEndProgram.Primary = true;
-            this.cmdEndProgram.Size = new System.Drawing.Size(279, 110);
+            this.cmdEndProgram.Size = new System.Drawing.Size(209, 89);
             this.cmdEndProgram.TabIndex = 27;
             this.cmdEndProgram.Text = "Programm beenden";
             this.cmdEndProgram.UseVisualStyleBackColor = true;
@@ -297,11 +313,12 @@
             // 
             this.cmdStartProgram.Depth = 0;
             this.cmdStartProgram.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdStartProgram.Location = new System.Drawing.Point(10, 46);
+            this.cmdStartProgram.Location = new System.Drawing.Point(8, 37);
+            this.cmdStartProgram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdStartProgram.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdStartProgram.Name = "cmdStartProgram";
             this.cmdStartProgram.Primary = true;
-            this.cmdStartProgram.Size = new System.Drawing.Size(279, 110);
+            this.cmdStartProgram.Size = new System.Drawing.Size(209, 89);
             this.cmdStartProgram.TabIndex = 26;
             this.cmdStartProgram.Text = "Programm starten";
             this.cmdStartProgram.UseVisualStyleBackColor = true;
@@ -312,19 +329,21 @@
             this.lblInfoDelayValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInfoDelayValue.AutoSize = true;
             this.lblInfoDelayValue.ForeColor = System.Drawing.Color.White;
-            this.lblInfoDelayValue.Location = new System.Drawing.Point(653, 137);
+            this.lblInfoDelayValue.Location = new System.Drawing.Point(490, 111);
+            this.lblInfoDelayValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfoDelayValue.Name = "lblInfoDelayValue";
-            this.lblInfoDelayValue.Size = new System.Drawing.Size(90, 17);
+            this.lblInfoDelayValue.Size = new System.Drawing.Size(67, 13);
             this.lblInfoDelayValue.TabIndex = 25;
             this.lblInfoDelayValue.Text = "Verzögerung";
             // 
             // txtOutputSliderValue
             // 
             this.txtOutputSliderValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOutputSliderValue.Location = new System.Drawing.Point(749, 134);
+            this.txtOutputSliderValue.Location = new System.Drawing.Point(562, 109);
+            this.txtOutputSliderValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOutputSliderValue.Name = "txtOutputSliderValue";
             this.txtOutputSliderValue.ReadOnly = true;
-            this.txtOutputSliderValue.Size = new System.Drawing.Size(145, 22);
+            this.txtOutputSliderValue.Size = new System.Drawing.Size(110, 20);
             this.txtOutputSliderValue.TabIndex = 24;
             this.txtOutputSliderValue.Text = "3000 ms";
             this.txtOutputSliderValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -337,10 +356,11 @@
             this.grpProgramStatus.Controls.Add(this.rtxtOutputReturnValues);
             this.grpProgramStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpProgramStatus.ForeColor = System.Drawing.Color.White;
-            this.grpProgramStatus.Location = new System.Drawing.Point(10, 290);
+            this.grpProgramStatus.Location = new System.Drawing.Point(8, 236);
+            this.grpProgramStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpProgramStatus.Name = "grpProgramStatus";
-            this.grpProgramStatus.Padding = new System.Windows.Forms.Padding(15);
-            this.grpProgramStatus.Size = new System.Drawing.Size(884, 222);
+            this.grpProgramStatus.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.grpProgramStatus.Size = new System.Drawing.Size(663, 180);
             this.grpProgramStatus.TabIndex = 23;
             this.grpProgramStatus.TabStop = false;
             this.grpProgramStatus.Text = "Status";
@@ -354,10 +374,11 @@
             this.rtxtOutputReturnValues.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtOutputReturnValues.ForeColor = System.Drawing.Color.White;
             this.rtxtOutputReturnValues.HideSelection = false;
-            this.rtxtOutputReturnValues.Location = new System.Drawing.Point(18, 33);
+            this.rtxtOutputReturnValues.Location = new System.Drawing.Point(14, 27);
+            this.rtxtOutputReturnValues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtxtOutputReturnValues.Name = "rtxtOutputReturnValues";
             this.rtxtOutputReturnValues.ReadOnly = true;
-            this.rtxtOutputReturnValues.Size = new System.Drawing.Size(848, 171);
+            this.rtxtOutputReturnValues.Size = new System.Drawing.Size(637, 140);
             this.rtxtOutputReturnValues.TabIndex = 0;
             this.rtxtOutputReturnValues.Text = "";
             // 
@@ -367,10 +388,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(6, 282);
+            this.materialDivider1.Location = new System.Drawing.Point(4, 229);
+            this.materialDivider1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(888, 2);
+            this.materialDivider1.Size = new System.Drawing.Size(666, 2);
             this.materialDivider1.TabIndex = 21;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -380,10 +402,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider1Pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1Pro.Depth = 0;
-            this.materialDivider1Pro.Location = new System.Drawing.Point(6, 162);
+            this.materialDivider1Pro.Location = new System.Drawing.Point(4, 132);
+            this.materialDivider1Pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialDivider1Pro.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1Pro.Name = "materialDivider1Pro";
-            this.materialDivider1Pro.Size = new System.Drawing.Size(888, 2);
+            this.materialDivider1Pro.Size = new System.Drawing.Size(666, 2);
             this.materialDivider1Pro.TabIndex = 20;
             this.materialDivider1Pro.Text = "materialDivider1Pro";
             // 
@@ -395,9 +418,10 @@
             this.lblInfo1.BackColor = System.Drawing.Color.Transparent;
             this.lblInfo1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo1.ForeColor = System.Drawing.Color.White;
-            this.lblInfo1.Location = new System.Drawing.Point(3, 234);
+            this.lblInfo1.Location = new System.Drawing.Point(2, 190);
+            this.lblInfo1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfo1.Name = "lblInfo1";
-            this.lblInfo1.Size = new System.Drawing.Size(63, 23);
+            this.lblInfo1.Size = new System.Drawing.Size(47, 18);
             this.lblInfo1.TabIndex = 19;
             this.lblInfo1.Text = "200ms";
             // 
@@ -409,9 +433,10 @@
             this.lblInfo5000.BackColor = System.Drawing.Color.Transparent;
             this.lblInfo5000.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo5000.ForeColor = System.Drawing.Color.White;
-            this.lblInfo5000.Location = new System.Drawing.Point(821, 235);
+            this.lblInfo5000.Location = new System.Drawing.Point(616, 191);
+            this.lblInfo5000.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfo5000.Name = "lblInfo5000";
-            this.lblInfo5000.Size = new System.Drawing.Size(73, 23);
+            this.lblInfo5000.Size = new System.Drawing.Size(54, 18);
             this.lblInfo5000.TabIndex = 18;
             this.lblInfo5000.Text = "5000ms";
             // 
@@ -421,9 +446,10 @@
             this.lblInfoDelay.BackColor = System.Drawing.Color.Transparent;
             this.lblInfoDelay.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfoDelay.ForeColor = System.Drawing.Color.White;
-            this.lblInfoDelay.Location = new System.Drawing.Point(6, 175);
+            this.lblInfoDelay.Location = new System.Drawing.Point(4, 142);
+            this.lblInfoDelay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfoDelay.Name = "lblInfoDelay";
-            this.lblInfoDelay.Size = new System.Drawing.Size(274, 23);
+            this.lblInfoDelay.Size = new System.Drawing.Size(218, 18);
             this.lblInfoDelay.TabIndex = 17;
             this.lblInfoDelay.Text = "Verzögerung Webserver - Updates";
             // 
@@ -433,11 +459,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sliderTime.Cursor = System.Windows.Forms.Cursors.Default;
             this.sliderTime.LargeChange = 500;
-            this.sliderTime.Location = new System.Drawing.Point(6, 201);
+            this.sliderTime.Location = new System.Drawing.Point(4, 163);
+            this.sliderTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sliderTime.Maximum = 5000;
             this.sliderTime.Minimum = 200;
             this.sliderTime.Name = "sliderTime";
-            this.sliderTime.Size = new System.Drawing.Size(888, 56);
+            this.sliderTime.Size = new System.Drawing.Size(666, 45);
             this.sliderTime.SmallChange = 100;
             this.sliderTime.TabIndex = 4;
             this.sliderTime.TickFrequency = 500;
@@ -449,10 +476,11 @@
             this.tabProtocol.Controls.Add(this.cmdSaveProtocol);
             this.tabProtocol.Controls.Add(this.grpProtocol);
             this.tabProtocol.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabProtocol.Location = new System.Drawing.Point(4, 25);
+            this.tabProtocol.Location = new System.Drawing.Point(4, 22);
+            this.tabProtocol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabProtocol.Name = "tabProtocol";
-            this.tabProtocol.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProtocol.Size = new System.Drawing.Size(900, 518);
+            this.tabProtocol.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProtocol.Size = new System.Drawing.Size(673, 418);
             this.tabProtocol.TabIndex = 2;
             this.tabProtocol.Text = "Verbindungsprotokoll";
             this.tabProtocol.UseVisualStyleBackColor = true;
@@ -463,12 +491,12 @@
             this.cmdSaveProtocol.AutoSize = true;
             this.cmdSaveProtocol.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdSaveProtocol.Depth = 0;
-            this.cmdSaveProtocol.Location = new System.Drawing.Point(591, 483);
-            this.cmdSaveProtocol.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.cmdSaveProtocol.Location = new System.Drawing.Point(380, 385);
+            this.cmdSaveProtocol.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.cmdSaveProtocol.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdSaveProtocol.Name = "cmdSaveProtocol";
             this.cmdSaveProtocol.Primary = false;
-            this.cmdSaveProtocol.Size = new System.Drawing.Size(313, 36);
+            this.cmdSaveProtocol.Size = new System.Drawing.Size(252, 36);
             this.cmdSaveProtocol.TabIndex = 9;
             this.cmdSaveProtocol.Text = "Protokoll als Datei exportieren";
             this.cmdSaveProtocol.UseVisualStyleBackColor = true;
@@ -482,10 +510,11 @@
             this.grpProtocol.Controls.Add(this.rtxtProtocol);
             this.grpProtocol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpProtocol.ForeColor = System.Drawing.Color.White;
-            this.grpProtocol.Location = new System.Drawing.Point(6, 6);
+            this.grpProtocol.Location = new System.Drawing.Point(4, 5);
+            this.grpProtocol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpProtocol.Name = "grpProtocol";
-            this.grpProtocol.Padding = new System.Windows.Forms.Padding(15);
-            this.grpProtocol.Size = new System.Drawing.Size(888, 458);
+            this.grpProtocol.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.grpProtocol.Size = new System.Drawing.Size(666, 372);
             this.grpProtocol.TabIndex = 8;
             this.grpProtocol.TabStop = false;
             this.grpProtocol.Text = "Kommunikation PC / µController";
@@ -499,10 +528,11 @@
             this.rtxtProtocol.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtProtocol.ForeColor = System.Drawing.Color.Lime;
             this.rtxtProtocol.HideSelection = false;
-            this.rtxtProtocol.Location = new System.Drawing.Point(18, 33);
+            this.rtxtProtocol.Location = new System.Drawing.Point(14, 27);
+            this.rtxtProtocol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtxtProtocol.Name = "rtxtProtocol";
             this.rtxtProtocol.ReadOnly = true;
-            this.rtxtProtocol.Size = new System.Drawing.Size(852, 407);
+            this.rtxtProtocol.Size = new System.Drawing.Size(640, 331);
             this.rtxtProtocol.TabIndex = 0;
             this.rtxtProtocol.Text = "";
             // 
@@ -512,10 +542,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabSelectorMain.BaseTabControl = this.tabControlMain;
             this.tabSelectorMain.Depth = 0;
-            this.tabSelectorMain.Location = new System.Drawing.Point(-2, 77);
+            this.tabSelectorMain.Location = new System.Drawing.Point(-2, 63);
+            this.tabSelectorMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabSelectorMain.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabSelectorMain.Name = "tabSelectorMain";
-            this.tabSelectorMain.Size = new System.Drawing.Size(936, 66);
+            this.tabSelectorMain.Size = new System.Drawing.Size(702, 54);
             this.tabSelectorMain.TabIndex = 19;
             // 
             // openFileDialog1
@@ -528,15 +559,16 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(932, 708);
+            this.ClientSize = new System.Drawing.Size(699, 575);
             this.Controls.Add(this.tabSelectorMain);
             this.Controls.Add(this.tabControlMain);
-            this.MinimumSize = new System.Drawing.Size(932, 708);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(699, 575);
             this.Name = "frmMain";
-            this.Text = "Remote Control";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabControlMain.ResumeLayout(false);
             this.tabConnection.ResumeLayout(false);
