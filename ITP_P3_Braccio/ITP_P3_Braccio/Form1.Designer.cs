@@ -28,59 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.components = new System.ComponentModel.Container();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPageApp = new System.Windows.Forms.TabPage();
+            this.tabPageConfig = new System.Windows.Forms.TabPage();
+            this.tabPageHelp = new System.Windows.Forms.TabPage();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // materialFlatButton1
+            // materialTabControl1
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(160, 245);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(263, 36);
-            this.materialFlatButton1.TabIndex = 0;
-            this.materialFlatButton1.Text = "materialFlatButton1";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialTabControl1.Controls.Add(this.tabPageApp);
+            this.materialTabControl1.Controls.Add(this.tabPageConfig);
+            this.materialTabControl1.Controls.Add(this.tabPageHelp);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Location = new System.Drawing.Point(12, 171);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(645, 521);
+            this.materialTabControl1.TabIndex = 0;
             // 
-            // materialRaisedButton1
+            // tabPageApp
             // 
-            this.materialRaisedButton1.AutoSize = true;
-            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(83, 339);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(284, 36);
-            this.materialRaisedButton1.TabIndex = 1;
-            this.materialRaisedButton1.Text = "materialRaisedButton1";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.tabPageApp.Location = new System.Drawing.Point(4, 29);
+            this.tabPageApp.Name = "tabPageApp";
+            this.tabPageApp.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageApp.Size = new System.Drawing.Size(637, 488);
+            this.tabPageApp.TabIndex = 0;
+            this.tabPageApp.Text = "Anwendung";
+            this.tabPageApp.UseVisualStyleBackColor = true;
+            // 
+            // tabPageConfig
+            // 
+            this.tabPageConfig.Location = new System.Drawing.Point(4, 29);
+            this.tabPageConfig.Name = "tabPageConfig";
+            this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageConfig.Size = new System.Drawing.Size(637, 488);
+            this.tabPageConfig.TabIndex = 1;
+            this.tabPageConfig.Text = "Konfiguration";
+            this.tabPageConfig.UseVisualStyleBackColor = true;
+            // 
+            // tabPageHelp
+            // 
+            this.tabPageHelp.Location = new System.Drawing.Point(4, 29);
+            this.tabPageHelp.Name = "tabPageHelp";
+            this.tabPageHelp.Size = new System.Drawing.Size(637, 488);
+            this.tabPageHelp.TabIndex = 2;
+            this.tabPageHelp.Text = "Hilfe";
+            this.tabPageHelp.UseVisualStyleBackColor = true;
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(12, 105);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(641, 60);
+            this.materialTabSelector1.TabIndex = 1;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 452);
-            this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.materialFlatButton1);
+            this.ClientSize = new System.Drawing.Size(669, 704);
+            this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.materialTabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Braccio";
+            this.materialTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPageApp;
+        private System.Windows.Forms.TabPage tabPageConfig;
+        private System.Windows.Forms.TabPage tabPageHelp;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }
 
