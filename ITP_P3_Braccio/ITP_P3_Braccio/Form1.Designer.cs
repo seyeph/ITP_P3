@@ -30,6 +30,8 @@
         {
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.myOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.mySaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // materialFlatButton1
@@ -38,12 +40,12 @@
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
             this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(160, 245);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton1.Location = new System.Drawing.Point(107, 159);
+            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
             this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(263, 36);
+            this.materialFlatButton1.Size = new System.Drawing.Size(181, 36);
             this.materialFlatButton1.TabIndex = 0;
             this.materialFlatButton1.Text = "materialFlatButton1";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
@@ -54,22 +56,28 @@
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(83, 339);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(55, 220);
+            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(284, 36);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(195, 36);
             this.materialRaisedButton1.TabIndex = 1;
             this.materialRaisedButton1.Text = "materialRaisedButton1";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             // 
+            // myOpenFileDialog
+            // 
+            this.myOpenFileDialog.FileName = "braccio_coords";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 452);
+            this.ClientSize = new System.Drawing.Size(386, 294);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialFlatButton1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -81,6 +89,8 @@
 
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private System.Windows.Forms.OpenFileDialog myOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog mySaveFileDialog;
     }
 }
 
