@@ -31,13 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPageApp = new System.Windows.Forms.TabPage();
+            this.lblPortState = new MaterialSkin.Controls.MaterialLabel();
+            this.cboPorts = new System.Windows.Forms.ComboBox();
+            this.cmdClosePort = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdOpenPort = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tabPageConfig = new System.Windows.Forms.TabPage();
+            this.cmdSave = new System.Windows.Forms.Button();
             this.tabPageHelp = new System.Windows.Forms.TabPage();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.cmdClosePort = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.cmdOpenPort = new System.Windows.Forms.Button();
-            this.cmdSave = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.materialTabControl1.SuspendLayout();
@@ -60,8 +62,10 @@
             // 
             // tabPageApp
             // 
-            this.tabPageApp.Controls.Add(this.cmdOpenPort);
+            this.tabPageApp.Controls.Add(this.lblPortState);
+            this.tabPageApp.Controls.Add(this.cboPorts);
             this.tabPageApp.Controls.Add(this.cmdClosePort);
+            this.tabPageApp.Controls.Add(this.cmdOpenPort);
             this.tabPageApp.Location = new System.Drawing.Point(4, 29);
             this.tabPageApp.Name = "tabPageApp";
             this.tabPageApp.Padding = new System.Windows.Forms.Padding(3);
@@ -69,6 +73,55 @@
             this.tabPageApp.TabIndex = 0;
             this.tabPageApp.Text = "Anwendung";
             this.tabPageApp.UseVisualStyleBackColor = true;
+            // 
+            // lblPortState
+            // 
+            this.lblPortState.AutoSize = true;
+            this.lblPortState.Depth = 0;
+            this.lblPortState.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPortState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPortState.Location = new System.Drawing.Point(179, 44);
+            this.lblPortState.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPortState.Name = "lblPortState";
+            this.lblPortState.Size = new System.Drawing.Size(264, 27);
+            this.lblPortState.TabIndex = 6;
+            this.lblPortState.Text = "Wählen Sie einen Port aus";
+            // 
+            // cboPorts
+            // 
+            this.cboPorts.FormattingEnabled = true;
+            this.cboPorts.Location = new System.Drawing.Point(246, 102);
+            this.cboPorts.Name = "cboPorts";
+            this.cboPorts.Size = new System.Drawing.Size(121, 28);
+            this.cboPorts.TabIndex = 5;
+            // 
+            // cmdClosePort
+            // 
+            this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdClosePort.Depth = 0;
+            this.cmdClosePort.Icon = null;
+            this.cmdClosePort.Location = new System.Drawing.Point(49, 374);
+            this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdClosePort.Name = "cmdClosePort";
+            this.cmdClosePort.Primary = true;
+            this.cmdClosePort.Size = new System.Drawing.Size(535, 76);
+            this.cmdClosePort.TabIndex = 4;
+            this.cmdClosePort.Text = "Port schließen";
+            this.cmdClosePort.UseVisualStyleBackColor = true;
+            // 
+            // cmdOpenPort
+            // 
+            this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdOpenPort.Depth = 0;
+            this.cmdOpenPort.Icon = null;
+            this.cmdOpenPort.Location = new System.Drawing.Point(49, 270);
+            this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdOpenPort.Name = "cmdOpenPort";
+            this.cmdOpenPort.Primary = true;
+            this.cmdOpenPort.Size = new System.Drawing.Size(535, 82);
+            this.cmdOpenPort.TabIndex = 2;
+            this.cmdOpenPort.Text = "Port öffnen";
+            this.cmdOpenPort.UseVisualStyleBackColor = true;
             // 
             // tabPageConfig
             // 
@@ -80,6 +133,15 @@
             this.tabPageConfig.TabIndex = 1;
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
+            // 
+            // cmdSave
+            // 
+            this.cmdSave.Location = new System.Drawing.Point(35, 356);
+            this.cmdSave.Name = "cmdSave";
+            this.cmdSave.Size = new System.Drawing.Size(128, 54);
+            this.cmdSave.TabIndex = 0;
+            this.cmdSave.Text = "Speichern";
+            this.cmdSave.UseVisualStyleBackColor = true;
             // 
             // tabPageHelp
             // 
@@ -100,39 +162,6 @@
             this.materialTabSelector1.Size = new System.Drawing.Size(641, 60);
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // cmdClosePort
-            // 
-            this.cmdClosePort.AutoSize = true;
-            this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.cmdClosePort.Depth = 0;
-            this.cmdClosePort.Icon = null;
-            this.cmdClosePort.Location = new System.Drawing.Point(339, 55);
-            this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cmdClosePort.Name = "cmdClosePort";
-            this.cmdClosePort.Primary = true;
-            this.cmdClosePort.Size = new System.Drawing.Size(159, 36);
-            this.cmdClosePort.TabIndex = 2;
-            this.cmdClosePort.Text = "Port öffnen";
-            this.cmdClosePort.UseVisualStyleBackColor = true;
-            // 
-            // cmdOpenPort
-            // 
-            this.cmdOpenPort.Location = new System.Drawing.Point(358, 200);
-            this.cmdOpenPort.Name = "cmdOpenPort";
-            this.cmdOpenPort.Size = new System.Drawing.Size(171, 84);
-            this.cmdOpenPort.TabIndex = 3;
-            this.cmdOpenPort.Text = "Port öffnen";
-            this.cmdOpenPort.UseVisualStyleBackColor = true;
-            // 
-            // cmdSave
-            // 
-            this.cmdSave.Location = new System.Drawing.Point(142, 94);
-            this.cmdSave.Name = "cmdSave";
-            this.cmdSave.Size = new System.Drawing.Size(126, 72);
-            this.cmdSave.TabIndex = 0;
-            this.cmdSave.Text = "Speichern";
-            this.cmdSave.UseVisualStyleBackColor = true;
             // 
             // openFileDialog1
             // 
@@ -163,11 +192,13 @@
         private System.Windows.Forms.TabPage tabPageHelp;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.Button cmdOpenPort;
-        private MaterialSkin.Controls.MaterialRaisedButton cmdClosePort;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdOpenPort;
         private System.Windows.Forms.Button cmdSave;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdClosePort;
+        private MaterialSkin.Controls.MaterialLabel lblPortState;
+        private System.Windows.Forms.ComboBox cboPorts;
     }
 }
 
