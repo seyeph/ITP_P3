@@ -9,19 +9,26 @@ namespace ITP_P3_Braccio
     class Position
     {
 
-        //variablen für die Winkel
+        //Getter / Setter für Winkel
         public int BasicAngle { get; set; } //Winkel um Roboter zu drehen
-        private int SoulderAngle { get; set; } 
-        private int EllbowAngle { get; set; }
-        private int HandAngle_hor { get; set; }
-        private int HandAngle_ver { get; set; }
-        private int Gripper { get; set; }
-
+        public int SoulderAngle { get; set; } 
+        public int EllbowAngle { get; set; }
+        public int HandAngle_hor { get; set; }
+        public int HandAngle_ver { get; set; }
+        public int Gripper { get; set; }
 
         //const
         public Position() {}
 
-
+        //überladender Konstruktuor mit allen Winkeln
+        public Position(int BasicAngle, int SoulderAngle, int EllbowAngle, int HandAngle_hor, int HandAngle_ver, int Gripper) {
+            this.BasicAngle = BasicAngle;
+            this.SoulderAngle = SoulderAngle;
+            this.EllbowAngle = EllbowAngle;
+            this.HandAngle_hor = HandAngle_hor;
+            this.HandAngle_ver = HandAngle_ver;
+            this.Gripper = Gripper;
+        }
 
     }
 }
