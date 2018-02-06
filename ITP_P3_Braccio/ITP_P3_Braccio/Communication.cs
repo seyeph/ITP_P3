@@ -8,6 +8,9 @@ namespace ITP_P3_Braccio
 {
     public static class Communication
     {
-        
+        public static void Move(ControlList)
+        {
+
+        }
     }
 }

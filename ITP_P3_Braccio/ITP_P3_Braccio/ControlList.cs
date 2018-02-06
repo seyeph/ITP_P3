@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    class ControlList
+    public class ControlList
     {
     }
 }
