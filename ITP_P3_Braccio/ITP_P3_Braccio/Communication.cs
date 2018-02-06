@@ -11,7 +11,7 @@ namespace ITP_P3_Braccio
         public static void Move(ControlList controlList)
         {
             foreach(Movement m in controlList)
-            {
+            { 
 
             }
         }

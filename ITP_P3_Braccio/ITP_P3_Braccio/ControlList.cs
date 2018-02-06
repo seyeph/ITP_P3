@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class ControlList
+    public class ControlList : IEnumerable<Movement>
     {
         private List<Movement> controlList = new List<Movement>();
 
@@ -26,8 +27,14 @@ namespace ITP_P3_Braccio
         }
 
 
-        public IEnumerable<Movement> GetEnumerator() {
-            return controlList;
+        IEnumerator<Movement> IEnumerable<Movement>.GetEnumerator()
+        {
+            return controlList.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return controlList.GetEnumerator();
         }
 
         #endregion
