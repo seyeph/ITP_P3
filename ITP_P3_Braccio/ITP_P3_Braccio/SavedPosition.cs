@@ -8,6 +8,6 @@ namespace ITP_P3_Braccio
 {
     public class SavedPosition : Position
     {
-        public String Name { get; set; }
+        public string Name { get; set; }
     }
 }
