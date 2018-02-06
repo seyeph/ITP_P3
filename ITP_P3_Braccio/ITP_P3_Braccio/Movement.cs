@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class SavedPosition : Position
+    public interface Movement
     {
-        public String Name { get; set; }
     }
 }

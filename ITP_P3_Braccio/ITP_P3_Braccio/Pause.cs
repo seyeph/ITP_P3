@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class SavedPosition : Position
+    public class Pause : Movement
     {
-        public String Name { get; set; }
+        public int Pause_ms { get; set; }
     }
 }
