@@ -12,7 +12,14 @@ namespace ITP_P3_Braccio
         {
             foreach(Movement m in controlList)
             {
+                if(m is Position)
+                {
 
+                }
+                else
+                {
+
+                }
             }
         }
     }
