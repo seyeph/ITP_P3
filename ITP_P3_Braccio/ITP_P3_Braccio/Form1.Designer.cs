@@ -62,6 +62,8 @@
             this.cmdDelete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmdLoadCSV = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmdSaveCSV = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdAddMovement = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdAddPause = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPageApp.SuspendLayout();
             this.tabPageConfig.SuspendLayout();
@@ -168,6 +170,8 @@
             // 
             // tabPageConfig
             // 
+            this.tabPageConfig.Controls.Add(this.cmdAddPause);
+            this.tabPageConfig.Controls.Add(this.cmdAddMovement);
             this.tabPageConfig.Controls.Add(this.cmdSaveCSV);
             this.tabPageConfig.Controls.Add(this.cmdLoadCSV);
             this.tabPageConfig.Controls.Add(this.cmdDelete);
@@ -442,6 +446,36 @@
             this.cmdSaveCSV.Text = "CSV Speichern";
             this.cmdSaveCSV.UseVisualStyleBackColor = true;
             // 
+            // cmdAddMovement
+            // 
+            this.cmdAddMovement.AutoSize = true;
+            this.cmdAddMovement.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdAddMovement.Depth = 0;
+            this.cmdAddMovement.Icon = null;
+            this.cmdAddMovement.Location = new System.Drawing.Point(338, 846);
+            this.cmdAddMovement.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdAddMovement.Name = "cmdAddMovement";
+            this.cmdAddMovement.Primary = true;
+            this.cmdAddMovement.Size = new System.Drawing.Size(265, 36);
+            this.cmdAddMovement.TabIndex = 21;
+            this.cmdAddMovement.Text = "Bewegung hinzufügen";
+            this.cmdAddMovement.UseVisualStyleBackColor = true;
+            // 
+            // cmdAddPause
+            // 
+            this.cmdAddPause.AutoSize = true;
+            this.cmdAddPause.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdAddPause.Depth = 0;
+            this.cmdAddPause.Icon = null;
+            this.cmdAddPause.Location = new System.Drawing.Point(28, 837);
+            this.cmdAddPause.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdAddPause.Name = "cmdAddPause";
+            this.cmdAddPause.Primary = true;
+            this.cmdAddPause.Size = new System.Drawing.Size(219, 36);
+            this.cmdAddPause.TabIndex = 22;
+            this.cmdAddPause.Text = "Pause hinzufügen";
+            this.cmdAddPause.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -503,6 +537,8 @@
         private MaterialSkin.Controls.MaterialRaisedButton cmdLoadCSV;
         private MaterialSkin.Controls.MaterialRaisedButton cmdDelete;
         private MaterialSkin.Controls.MaterialRaisedButton cmdStart;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdAddMovement;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdAddPause;
     }
 }
 
