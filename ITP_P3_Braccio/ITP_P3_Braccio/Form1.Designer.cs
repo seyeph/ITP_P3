@@ -42,6 +42,7 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.lblPortStatus = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPageApp.SuspendLayout();
             this.tabPageConfig.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // tabPageApp
             // 
+            this.tabPageApp.Controls.Add(this.lblPortStatus);
             this.tabPageApp.Controls.Add(this.lblPortState);
             this.tabPageApp.Controls.Add(this.cboPorts);
             this.tabPageApp.Controls.Add(this.cmdClosePort);
@@ -80,7 +82,7 @@
             this.lblPortState.Depth = 0;
             this.lblPortState.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPortState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPortState.Location = new System.Drawing.Point(179, 44);
+            this.lblPortState.Location = new System.Drawing.Point(25, 41);
             this.lblPortState.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPortState.Name = "lblPortState";
             this.lblPortState.Size = new System.Drawing.Size(264, 27);
@@ -90,7 +92,7 @@
             // cboPorts
             // 
             this.cboPorts.FormattingEnabled = true;
-            this.cboPorts.Location = new System.Drawing.Point(246, 102);
+            this.cboPorts.Location = new System.Drawing.Point(96, 108);
             this.cboPorts.Name = "cboPorts";
             this.cboPorts.Size = new System.Drawing.Size(121, 28);
             this.cboPorts.TabIndex = 5;
@@ -100,11 +102,11 @@
             this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdClosePort.Depth = 0;
             this.cmdClosePort.Icon = null;
-            this.cmdClosePort.Location = new System.Drawing.Point(49, 374);
+            this.cmdClosePort.Location = new System.Drawing.Point(356, 287);
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
             this.cmdClosePort.Primary = true;
-            this.cmdClosePort.Size = new System.Drawing.Size(535, 76);
+            this.cmdClosePort.Size = new System.Drawing.Size(242, 84);
             this.cmdClosePort.TabIndex = 4;
             this.cmdClosePort.Text = "Port schließen";
             this.cmdClosePort.UseVisualStyleBackColor = true;
@@ -114,11 +116,11 @@
             this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdOpenPort.Depth = 0;
             this.cmdOpenPort.Icon = null;
-            this.cmdOpenPort.Location = new System.Drawing.Point(49, 270);
+            this.cmdOpenPort.Location = new System.Drawing.Point(356, 108);
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
             this.cmdOpenPort.Primary = true;
-            this.cmdOpenPort.Size = new System.Drawing.Size(535, 82);
+            this.cmdOpenPort.Size = new System.Drawing.Size(242, 84);
             this.cmdOpenPort.TabIndex = 2;
             this.cmdOpenPort.Text = "Port öffnen";
             this.cmdOpenPort.UseVisualStyleBackColor = true;
@@ -167,6 +169,19 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // lblPortStatus
+            // 
+            this.lblPortStatus.AutoSize = true;
+            this.lblPortStatus.Depth = 0;
+            this.lblPortStatus.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPortStatus.Location = new System.Drawing.Point(25, 410);
+            this.lblPortStatus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPortStatus.Name = "lblPortStatus";
+            this.lblPortStatus.Size = new System.Drawing.Size(264, 27);
+            this.lblPortStatus.TabIndex = 7;
+            this.lblPortStatus.Text = "Wählen Sie einen Port aus";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -199,6 +214,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton cmdClosePort;
         private MaterialSkin.Controls.MaterialLabel lblPortState;
         private System.Windows.Forms.ComboBox cboPorts;
+        private MaterialSkin.Controls.MaterialLabel lblPortStatus;
     }
 }
 

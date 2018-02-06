@@ -30,11 +30,11 @@ namespace ITP_P3_Braccio
             return operatingWell;
         }
 
-        public bool readFile(string path)
+        /*public bool readFile(string path)
         {
             bool operatingWell = true;
 
             //was i nu ned :D
-        }
+        }*/
     }
 }
