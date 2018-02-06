@@ -9,7 +9,8 @@ namespace ITP_P3_Braccio
 {
     class FileOperator
     {
-        public bool writeFile(string path, Position input) {
+        public bool writeFile(string path, Position input)
+        {
 
             bool operatingWell = true;
             string textToWrite = "";
@@ -19,7 +20,7 @@ namespace ITP_P3_Braccio
 
             try
             {
-                sw.Write(textToWrite);
+                tw.Write(textToWrite);
             }
             catch (Exception e)
             {
@@ -28,7 +29,7 @@ namespace ITP_P3_Braccio
             }
             finally
             {
-                sw.Close();
+                tw.Close();
             }
             return operatingWell;
         }
@@ -43,7 +44,7 @@ namespace ITP_P3_Braccio
 
             try
             {
-                readValue = sr.ReadToEnd();
+                readValue = tr.ReadToEnd();
 
                 //readInputBewegung = 
             }
@@ -54,7 +55,7 @@ namespace ITP_P3_Braccio
             }
             finally
             {
-                sr.Close();
+                tr.Close();
             }
             return operatingWell;
         }
