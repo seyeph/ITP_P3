@@ -31,43 +31,49 @@
             this.components = new System.ComponentModel.Container();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPageApp = new System.Windows.Forms.TabPage();
+            this.lblPortStatus = new MaterialSkin.Controls.MaterialLabel();
             this.lblPort = new MaterialSkin.Controls.MaterialLabel();
             this.cboPorts = new System.Windows.Forms.ComboBox();
             this.cmdClosePort = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmdOpenPort = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tabPageConfig = new System.Windows.Forms.TabPage();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblPause = new MaterialSkin.Controls.MaterialLabel();
+            this.nudPause = new System.Windows.Forms.NumericUpDown();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.trackBarGripper = new System.Windows.Forms.TrackBar();
+            this.trackBarWristVert = new System.Windows.Forms.TrackBar();
+            this.trackBarWristHor = new System.Windows.Forms.TrackBar();
+            this.trackBarElbow = new System.Windows.Forms.TrackBar();
+            this.trackBarShoulder = new System.Windows.Forms.TrackBar();
+            this.trackBarBasic = new System.Windows.Forms.TrackBar();
             this.tabPageHelp = new System.Windows.Forms.TabPage();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lblPortStatus = new MaterialSkin.Controls.MaterialLabel();
-            this.trackBarBasic = new System.Windows.Forms.TrackBar();
-            this.trackBarShoulder = new System.Windows.Forms.TrackBar();
-            this.trackBarElbow = new System.Windows.Forms.TrackBar();
-            this.trackBarWristHor = new System.Windows.Forms.TrackBar();
-            this.trackBarWristVert = new System.Windows.Forms.TrackBar();
-            this.trackBarGripper = new System.Windows.Forms.TrackBar();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.nudPause = new System.Windows.Forms.NumericUpDown();
-            this.lblPause = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.cmdStart = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdDelete = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdLoadCSV = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdSaveCSV = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdAddMovement = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmdAddPause = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPageApp.SuspendLayout();
             this.tabPageConfig.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -80,7 +86,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1074, 858);
+            this.materialTabControl1.Size = new System.Drawing.Size(1184, 942);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPageApp
@@ -97,6 +103,19 @@
             this.tabPageApp.TabIndex = 0;
             this.tabPageApp.Text = "Anwendung";
             this.tabPageApp.UseVisualStyleBackColor = true;
+            // 
+            // lblPortStatus
+            // 
+            this.lblPortStatus.AutoSize = true;
+            this.lblPortStatus.Depth = 0;
+            this.lblPortStatus.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPortStatus.Location = new System.Drawing.Point(25, 410);
+            this.lblPortStatus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPortStatus.Name = "lblPortStatus";
+            this.lblPortStatus.Size = new System.Drawing.Size(264, 27);
+            this.lblPortStatus.TabIndex = 7;
+            this.lblPortStatus.Text = "Wählen Sie einen Port aus";
             // 
             // lblPort
             // 
@@ -121,6 +140,7 @@
             // 
             // cmdClosePort
             // 
+            this.cmdClosePort.AutoSize = true;
             this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdClosePort.Depth = 0;
             this.cmdClosePort.Icon = null;
@@ -128,13 +148,14 @@
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
             this.cmdClosePort.Primary = true;
-            this.cmdClosePort.Size = new System.Drawing.Size(242, 84);
+            this.cmdClosePort.Size = new System.Drawing.Size(189, 36);
             this.cmdClosePort.TabIndex = 4;
             this.cmdClosePort.Text = "Port schließen";
             this.cmdClosePort.UseVisualStyleBackColor = true;
             // 
             // cmdOpenPort
             // 
+            this.cmdOpenPort.AutoSize = true;
             this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdOpenPort.Depth = 0;
             this.cmdOpenPort.Icon = null;
@@ -142,13 +163,19 @@
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
             this.cmdOpenPort.Primary = true;
-            this.cmdOpenPort.Size = new System.Drawing.Size(242, 84);
+            this.cmdOpenPort.Size = new System.Drawing.Size(159, 36);
             this.cmdOpenPort.TabIndex = 2;
             this.cmdOpenPort.Text = "Port öffnen";
             this.cmdOpenPort.UseVisualStyleBackColor = true;
             // 
             // tabPageConfig
             // 
+            this.tabPageConfig.Controls.Add(this.cmdAddPause);
+            this.tabPageConfig.Controls.Add(this.cmdAddMovement);
+            this.tabPageConfig.Controls.Add(this.cmdSaveCSV);
+            this.tabPageConfig.Controls.Add(this.cmdLoadCSV);
+            this.tabPageConfig.Controls.Add(this.cmdDelete);
+            this.tabPageConfig.Controls.Add(this.cmdStart);
             this.tabPageConfig.Controls.Add(this.materialLabel7);
             this.tabPageConfig.Controls.Add(this.materialLabel6);
             this.tabPageConfig.Controls.Add(this.materialLabel5);
@@ -168,16 +195,178 @@
             this.tabPageConfig.Location = new System.Drawing.Point(4, 29);
             this.tabPageConfig.Name = "tabPageConfig";
             this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConfig.Size = new System.Drawing.Size(1066, 825);
+            this.tabPageConfig.Size = new System.Drawing.Size(1176, 909);
             this.tabPageConfig.TabIndex = 1;
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel7.Location = new System.Drawing.Point(23, 749);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(78, 27);
+            this.materialLabel7.TabIndex = 16;
+            this.materialLabel7.Text = "Greifer";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(18, 626);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(203, 27);
+            this.materialLabel6.TabIndex = 15;
+            this.materialLabel6.Text = "Handgelenk vertikal";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(18, 514);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(230, 27);
+            this.materialLabel5.TabIndex = 14;
+            this.materialLabel5.Text = "Handgelenk horizontal";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(18, 398);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(120, 27);
+            this.materialLabel4.TabIndex = 13;
+            this.materialLabel4.Text = "Ellenbogen";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(18, 285);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(92, 27);
+            this.materialLabel3.TabIndex = 12;
+            this.materialLabel3.Text = "Schulter";
+            // 
+            // lblPause
+            // 
+            this.lblPause.AutoSize = true;
+            this.lblPause.Depth = 0;
+            this.lblPause.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPause.Location = new System.Drawing.Point(639, 700);
+            this.lblPause.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPause.Name = "lblPause";
+            this.lblPause.Size = new System.Drawing.Size(73, 27);
+            this.lblPause.TabIndex = 11;
+            this.lblPause.Text = "Pause";
+            // 
+            // nudPause
+            // 
+            this.nudPause.Location = new System.Drawing.Point(782, 700);
+            this.nudPause.Name = "nudPause";
+            this.nudPause.Size = new System.Drawing.Size(120, 26);
+            this.nudPause.TabIndex = 10;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(644, 129);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(395, 524);
+            this.listBox1.TabIndex = 9;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(36, 49);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(419, 27);
+            this.materialLabel2.TabIndex = 8;
+            this.materialLabel2.Text = "Geben Sie die Position der Teile in Grad an";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(18, 170);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(71, 27);
+            this.materialLabel1.TabIndex = 7;
+            this.materialLabel1.Text = "Basic ";
+            // 
+            // trackBarGripper
+            // 
+            this.trackBarGripper.Location = new System.Drawing.Point(254, 740);
+            this.trackBarGripper.Name = "trackBarGripper";
+            this.trackBarGripper.Size = new System.Drawing.Size(340, 69);
+            this.trackBarGripper.TabIndex = 6;
+            // 
+            // trackBarWristVert
+            // 
+            this.trackBarWristVert.Location = new System.Drawing.Point(254, 601);
+            this.trackBarWristVert.Name = "trackBarWristVert";
+            this.trackBarWristVert.Size = new System.Drawing.Size(340, 69);
+            this.trackBarWristVert.TabIndex = 5;
+            // 
+            // trackBarWristHor
+            // 
+            this.trackBarWristHor.Location = new System.Drawing.Point(254, 496);
+            this.trackBarWristHor.Name = "trackBarWristHor";
+            this.trackBarWristHor.Size = new System.Drawing.Size(340, 69);
+            this.trackBarWristHor.TabIndex = 4;
+            // 
+            // trackBarElbow
+            // 
+            this.trackBarElbow.Location = new System.Drawing.Point(254, 398);
+            this.trackBarElbow.Name = "trackBarElbow";
+            this.trackBarElbow.Size = new System.Drawing.Size(340, 69);
+            this.trackBarElbow.TabIndex = 3;
+            // 
+            // trackBarShoulder
+            // 
+            this.trackBarShoulder.Location = new System.Drawing.Point(254, 264);
+            this.trackBarShoulder.Name = "trackBarShoulder";
+            this.trackBarShoulder.Size = new System.Drawing.Size(340, 69);
+            this.trackBarShoulder.TabIndex = 2;
+            // 
+            // trackBarBasic
+            // 
+            this.trackBarBasic.Location = new System.Drawing.Point(254, 146);
+            this.trackBarBasic.Name = "trackBarBasic";
+            this.trackBarBasic.Size = new System.Drawing.Size(340, 69);
+            this.trackBarBasic.TabIndex = 1;
             // 
             // tabPageHelp
             // 
             this.tabPageHelp.Location = new System.Drawing.Point(4, 29);
             this.tabPageHelp.Name = "tabPageHelp";
-            this.tabPageHelp.Size = new System.Drawing.Size(637, 488);
+            this.tabPageHelp.Size = new System.Drawing.Size(1066, 825);
             this.tabPageHelp.TabIndex = 2;
             this.tabPageHelp.Text = "Hilfe";
             this.tabPageHelp.UseVisualStyleBackColor = true;
@@ -197,186 +386,101 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lblPortStatus
+            // cmdStart
             // 
-            this.lblPortStatus.AutoSize = true;
-            this.lblPortStatus.Depth = 0;
-            this.lblPortStatus.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblPortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPortStatus.Location = new System.Drawing.Point(25, 410);
-            this.lblPortStatus.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblPortStatus.Name = "lblPortStatus";
-            this.lblPortStatus.Size = new System.Drawing.Size(264, 27);
-            this.lblPortStatus.TabIndex = 7;
-            this.lblPortStatus.Text = "Wählen Sie einen Port aus";
+            this.cmdStart.AutoSize = true;
+            this.cmdStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdStart.Depth = 0;
+            this.cmdStart.Icon = null;
+            this.cmdStart.Location = new System.Drawing.Point(644, 773);
+            this.cmdStart.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdStart.Name = "cmdStart";
+            this.cmdStart.Primary = true;
+            this.cmdStart.Size = new System.Drawing.Size(87, 36);
+            this.cmdStart.TabIndex = 17;
+            this.cmdStart.Text = "Start";
+            this.cmdStart.UseVisualStyleBackColor = true;
             // 
-            // trackBarBasic
+            // cmdDelete
             // 
-            this.trackBarBasic.Location = new System.Drawing.Point(254, 146);
-            this.trackBarBasic.Name = "trackBarBasic";
-            this.trackBarBasic.Size = new System.Drawing.Size(340, 69);
-            this.trackBarBasic.TabIndex = 1;
+            this.cmdDelete.AutoSize = true;
+            this.cmdDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdDelete.Depth = 0;
+            this.cmdDelete.Icon = null;
+            this.cmdDelete.Location = new System.Drawing.Point(644, 828);
+            this.cmdDelete.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Primary = true;
+            this.cmdDelete.Size = new System.Drawing.Size(231, 36);
+            this.cmdDelete.TabIndex = 18;
+            this.cmdDelete.Text = "Bewegung löschen";
+            this.cmdDelete.UseVisualStyleBackColor = true;
             // 
-            // trackBarShoulder
+            // cmdLoadCSV
             // 
-            this.trackBarShoulder.Location = new System.Drawing.Point(254, 264);
-            this.trackBarShoulder.Name = "trackBarShoulder";
-            this.trackBarShoulder.Size = new System.Drawing.Size(340, 69);
-            this.trackBarShoulder.TabIndex = 2;
+            this.cmdLoadCSV.AutoSize = true;
+            this.cmdLoadCSV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdLoadCSV.Depth = 0;
+            this.cmdLoadCSV.Icon = null;
+            this.cmdLoadCSV.Location = new System.Drawing.Point(900, 773);
+            this.cmdLoadCSV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdLoadCSV.Name = "cmdLoadCSV";
+            this.cmdLoadCSV.Primary = true;
+            this.cmdLoadCSV.Size = new System.Drawing.Size(145, 36);
+            this.cmdLoadCSV.TabIndex = 19;
+            this.cmdLoadCSV.Text = "CSV öffnen";
+            this.cmdLoadCSV.UseVisualStyleBackColor = true;
             // 
-            // trackBarElbow
+            // cmdSaveCSV
             // 
-            this.trackBarElbow.Location = new System.Drawing.Point(254, 398);
-            this.trackBarElbow.Name = "trackBarElbow";
-            this.trackBarElbow.Size = new System.Drawing.Size(340, 69);
-            this.trackBarElbow.TabIndex = 3;
+            this.cmdSaveCSV.AutoSize = true;
+            this.cmdSaveCSV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdSaveCSV.Depth = 0;
+            this.cmdSaveCSV.Icon = null;
+            this.cmdSaveCSV.Location = new System.Drawing.Point(900, 827);
+            this.cmdSaveCSV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdSaveCSV.Name = "cmdSaveCSV";
+            this.cmdSaveCSV.Primary = true;
+            this.cmdSaveCSV.Size = new System.Drawing.Size(178, 36);
+            this.cmdSaveCSV.TabIndex = 20;
+            this.cmdSaveCSV.Text = "CSV Speichern";
+            this.cmdSaveCSV.UseVisualStyleBackColor = true;
             // 
-            // trackBarWristHor
+            // cmdAddMovement
             // 
-            this.trackBarWristHor.Location = new System.Drawing.Point(254, 496);
-            this.trackBarWristHor.Name = "trackBarWristHor";
-            this.trackBarWristHor.Size = new System.Drawing.Size(340, 69);
-            this.trackBarWristHor.TabIndex = 4;
+            this.cmdAddMovement.AutoSize = true;
+            this.cmdAddMovement.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdAddMovement.Depth = 0;
+            this.cmdAddMovement.Icon = null;
+            this.cmdAddMovement.Location = new System.Drawing.Point(338, 846);
+            this.cmdAddMovement.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdAddMovement.Name = "cmdAddMovement";
+            this.cmdAddMovement.Primary = true;
+            this.cmdAddMovement.Size = new System.Drawing.Size(265, 36);
+            this.cmdAddMovement.TabIndex = 21;
+            this.cmdAddMovement.Text = "Bewegung hinzufügen";
+            this.cmdAddMovement.UseVisualStyleBackColor = true;
             // 
-            // trackBarWristVert
+            // cmdAddPause
             // 
-            this.trackBarWristVert.Location = new System.Drawing.Point(254, 601);
-            this.trackBarWristVert.Name = "trackBarWristVert";
-            this.trackBarWristVert.Size = new System.Drawing.Size(340, 69);
-            this.trackBarWristVert.TabIndex = 5;
-            // 
-            // trackBarGripper
-            // 
-            this.trackBarGripper.Location = new System.Drawing.Point(254, 740);
-            this.trackBarGripper.Name = "trackBarGripper";
-            this.trackBarGripper.Size = new System.Drawing.Size(340, 69);
-            this.trackBarGripper.TabIndex = 6;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(18, 170);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(71, 27);
-            this.materialLabel1.TabIndex = 7;
-            this.materialLabel1.Text = "Basic ";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(36, 49);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(419, 27);
-            this.materialLabel2.TabIndex = 8;
-            this.materialLabel2.Text = "Geben Sie die Position der Teile in Grad an";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(644, 129);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(395, 524);
-            this.listBox1.TabIndex = 9;
-            // 
-            // nudPause
-            // 
-            this.nudPause.Location = new System.Drawing.Point(663, 773);
-            this.nudPause.Name = "nudPause";
-            this.nudPause.Size = new System.Drawing.Size(120, 26);
-            this.nudPause.TabIndex = 10;
-            // 
-            // lblPause
-            // 
-            this.lblPause.AutoSize = true;
-            this.lblPause.Depth = 0;
-            this.lblPause.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblPause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPause.Location = new System.Drawing.Point(658, 725);
-            this.lblPause.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblPause.Name = "lblPause";
-            this.lblPause.Size = new System.Drawing.Size(73, 27);
-            this.lblPause.TabIndex = 11;
-            this.lblPause.Text = "Pause";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(18, 285);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(92, 27);
-            this.materialLabel3.TabIndex = 12;
-            this.materialLabel3.Text = "Schulter";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(18, 398);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(120, 27);
-            this.materialLabel4.TabIndex = 13;
-            this.materialLabel4.Text = "Ellenbogen";
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(18, 514);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(230, 27);
-            this.materialLabel5.TabIndex = 14;
-            this.materialLabel5.Text = "Handgelenk horizontal";
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(18, 626);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(203, 27);
-            this.materialLabel6.TabIndex = 15;
-            this.materialLabel6.Text = "Handgelenk vertikal";
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(23, 749);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(78, 27);
-            this.materialLabel7.TabIndex = 16;
-            this.materialLabel7.Text = "Greifer";
+            this.cmdAddPause.AutoSize = true;
+            this.cmdAddPause.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdAddPause.Depth = 0;
+            this.cmdAddPause.Icon = null;
+            this.cmdAddPause.Location = new System.Drawing.Point(28, 837);
+            this.cmdAddPause.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdAddPause.Name = "cmdAddPause";
+            this.cmdAddPause.Primary = true;
+            this.cmdAddPause.Size = new System.Drawing.Size(219, 36);
+            this.cmdAddPause.TabIndex = 22;
+            this.cmdAddPause.Text = "Pause hinzufügen";
+            this.cmdAddPause.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 1041);
+            this.ClientSize = new System.Drawing.Size(1208, 1125);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Name = "Form1";
@@ -387,13 +491,13 @@
             this.tabPageApp.PerformLayout();
             this.tabPageConfig.ResumeLayout(false);
             this.tabPageConfig.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,6 +533,12 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdSaveCSV;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdLoadCSV;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdDelete;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdStart;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdAddMovement;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdAddPause;
     }
 }
 

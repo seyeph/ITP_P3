@@ -3,27 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.IO.Ports;
+using System.Windows.Forms;
 
 namespace ITP_P3_Braccio
 {
     public static class Communication
     {
-        public static void Move(ControlList controlList)
+        public static void Move(string Port, ControlList controlList)
         {
-            foreach(Movement m in controlList)
-<<<<<<< HEAD
+            SerialPort port = new SerialPort(Port);
+            try
             {
-                if(m is Position)
+                port.Open();
+                foreach (Movement m in controlList)
                 {
-=======
-            { 
->>>>>>> bd63d35f5c6a319034e3b28862460474e504c869
+                    if (m is Position)
+                    {
+                        Position position = (Position)m;
 
+                    }
+                    else
+                    {
+                        if (m is Pause)
+                        {
+                            Task.Delay(((Pause)m).Pause_ms);
+                        }
+                    }
                 }
-                else
-                {
-
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                port.Close();
             }
         }
     }
