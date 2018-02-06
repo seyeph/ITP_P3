@@ -9,14 +9,17 @@ namespace ITP_P3_Braccio
 {
     class FileOperator
     {
-        public bool writeFile(string path, string coords) {
-            bool operatingWell = true;
+        public bool writeFile(string path/*, Bewegung input */) {
 
+            bool operatingWell = true;
+            string textToWrite = "";
             StreamWriter sw = new StreamWriter(path);
+
+            // textToWrite = ...
 
             try
             {
-                sw.Write(coords);
+                sw.Write(textToWrite);
             }
             catch (Exception e)
             {
@@ -30,11 +33,30 @@ namespace ITP_P3_Braccio
             return operatingWell;
         }
 
-        /*public bool readFile(string path)
+        public bool readFile(string path) //not finally
         {
             bool operatingWell = true;
+            string readValue = "";
+            //Bewegung readInputBewegung = new Bewegung();
 
-            //was i nu ned :D
-        }*/
+            StreamReader sr = new StreamReader(path);
+
+            try
+            {
+                readValue = sr.ReadToEnd();
+
+                //readInputBewegung = 
+            }
+            catch (Exception e)
+            {
+                operatingWell = false;
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                sr.Close();
+            }
+            return operatingWell;
+        }
     }
 }
