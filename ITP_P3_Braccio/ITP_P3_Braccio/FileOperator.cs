@@ -9,7 +9,7 @@ namespace ITP_P3_Braccio
 {
     class FileOperator
     {
-        public bool writeFile(string path, Position input)
+        public bool writeConfig(string path, Configuration listofPositions)
         {
 
             bool operatingWell = true;
@@ -34,30 +34,43 @@ namespace ITP_P3_Braccio
             return operatingWell;
         }
 
-        public bool readFile(string path) //not finally
+        public object readConfig(string path)
         {
-            bool operatingWell = true;
-            string readValue = "";
-            //Bewegung readInputBewegung = new Bewegung();
+            string rowValue;
+            string[] cellValues;
+            Position[] fileInput = new Position[100];
 
-            TextReader tr = new StreamReader(path);
+            if (File.Exists(path))
+            {
+                StreamReader sr = new StreamReader(path);
+                try
+                {
+                    for(int i = 0; sr.Peek() != -1; i++)
+                    {
+                        rowValue = sr.ReadLine();
+                        cellValues = rowValue.Split(';');
 
-            try
-            {
-                readValue = tr.ReadToEnd();
+                        fileInput[i] = new Position(
+                                Int32.Parse(cellValues[0].ToString()),
+                                Int32.Parse(cellValues[1].ToString()),
+                                Int32.Parse(cellValues[2].ToString()),
+                                Int32.Parse(cellValues[3].ToString()),
+                                Int32.Parse(cellValues[4].ToString()),
+                                Int32.Parse(cellValues[5].ToString())
+                                );
 
-                //readInputBewegung = 
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception(e.Message);
+                }
+                finally
+                {
+                    sr.Close();
+                }
             }
-            catch (Exception e)
-            {
-                operatingWell = false;
-                throw new Exception(e.Message);
-            }
-            finally
-            {
-                tr.Close();
-            }
-            return operatingWell;
+            return null;
         }
     }
 }
