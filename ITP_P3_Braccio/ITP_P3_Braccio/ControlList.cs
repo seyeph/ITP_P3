@@ -12,11 +12,8 @@ namespace ITP_P3_Braccio
 
         #region Add
         //method to add a Position or a Pause
-        public void Add(Position p) {
-            controlList.Add(p);
-        }
-
-        public void Add(Pause p)
+  
+        public void Add(Movement p)
         {
             controlList.Add(p);
         }
@@ -24,12 +21,13 @@ namespace ITP_P3_Braccio
 
 
         #region Remove
-        public void Remove(Position p) {
+        public void Remove(Movement p) {
             controlList.Remove(p);
         }
 
-        public void Remove(Pause p) {
-            controlList.Remove(p);
+
+        public IEnumerable<Movement> GetEnumerator() {
+            return controlList;
         }
 
         #endregion
