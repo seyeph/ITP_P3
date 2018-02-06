@@ -8,7 +8,20 @@ namespace ITP_P3_Braccio
 {
     class Position
     {
-        private int basicAngle;
-        
+
+        //variablen für die Winkel
+        public int BasicAngle { get; set; } //Winkel um Roboter zu drehen
+        private int SoulderAngle { get; set; } 
+        private int EllbowAngle { get; set; }
+        private int HandAngle_hor { get; set; }
+        private int HandAngle_ver { get; set; }
+        private int Gripper { get; set; }
+
+
+        //const
+        public Position() {}
+
+
+
     }
 }
