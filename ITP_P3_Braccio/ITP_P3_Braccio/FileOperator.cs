@@ -9,11 +9,11 @@ namespace ITP_P3_Braccio
 {
     class FileOperator
     {
-        public bool writeFile(string path/*, Bewegung input */) {
+        public bool writeFile(string path, Position input) {
 
             bool operatingWell = true;
             string textToWrite = "";
-            StreamWriter sw = new StreamWriter(path);
+            TextWriter tw = new StreamWriter(path);
 
             // textToWrite = ...
 
@@ -39,7 +39,7 @@ namespace ITP_P3_Braccio
             string readValue = "";
             //Bewegung readInputBewegung = new Bewegung();
 
-            StreamReader sr = new StreamReader(path);
+            TextReader tr = new StreamReader(path);
 
             try
             {
