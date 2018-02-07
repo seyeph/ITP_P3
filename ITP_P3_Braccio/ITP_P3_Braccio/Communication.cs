@@ -11,18 +11,35 @@ namespace ITP_P3_Braccio
 {
     public static class Communication
     {
-        public static void Move(string Port, ControlList controlList)
+        public static void Move(string port, int motorPause, ControlList controlList)
         {
-            SerialPort port = new SerialPort(Port);
+            SerialPort sPort = new SerialPort(port);
+            StringBuilder sb = new StringBuilder();
             try
             {
-                port.Open();
+                sPort.Open();
+                sb.Clear();
                 foreach (Movement m in controlList)
                 {
                     if (m is Position)
                     {
                         Position position = (Position)m;
+                        sb.Append(motorPause);
+                        sb.Append(';');
+                        sb.Append(position.BasicAngle);
+                        sb.Append(';');
+                        sb.Append(position.SoulderAngle);
+                        sb.Append(';');
+                        sb.Append(position.EllbowAngle);
+                        sb.Append(';');
+                        sb.Append(position.HandAngle_ver);
+                        sb.Append(';');
+                        sb.Append(position.HandAngle_hor);
+                        sb.Append(';');
+                        sb.Append(position.Gripper);
 
+                        sPort.Write(sb.ToString());
+                        sPort.ReadExisting();
                     }
                     else
                     {
@@ -39,7 +56,7 @@ namespace ITP_P3_Braccio
             }
             finally
             {
-                port.Close();
+                sPort.Close();
             }
         }
     }
