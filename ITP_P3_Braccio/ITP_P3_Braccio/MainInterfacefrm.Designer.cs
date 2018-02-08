@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPageApplication = new System.Windows.Forms.TabPage();
+            this.cboSavedPositions = new System.Windows.Forms.ComboBox();
             this.cmdAddPause = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmdAddMovement = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmdSaveCSV = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -49,12 +50,12 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.trackBarGripper = new System.Windows.Forms.TrackBar();
             this.trackBarWristVert = new System.Windows.Forms.TrackBar();
-            this.trackBarWristHor = new System.Windows.Forms.TrackBar();
-            this.trackBarElbow = new System.Windows.Forms.TrackBar();
+            this.trackBarWristRot = new System.Windows.Forms.TrackBar();
+            this.trackBarEllbow = new System.Windows.Forms.TrackBar();
             this.trackBarShoulder = new System.Windows.Forms.TrackBar();
             this.trackBarBasic = new System.Windows.Forms.TrackBar();
             this.tabPageConfig = new System.Windows.Forms.TabPage();
-            this.lblPortStatus = new MaterialSkin.Controls.MaterialLabel();
+            this.cmdSaveConfig = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lblPort = new MaterialSkin.Controls.MaterialLabel();
             this.cboPorts = new System.Windows.Forms.ComboBox();
             this.cmdClosePort = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -64,17 +65,19 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericEnginePause = new System.Windows.Forms.NumericUpDown();
+            this.lblEnginePause = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPageApplication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristRot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarEllbow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).BeginInit();
             this.tabPageConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEnginePause)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -93,7 +96,7 @@
             // 
             // tabPageApplication
             // 
-            this.tabPageApplication.Controls.Add(this.comboBox1);
+            this.tabPageApplication.Controls.Add(this.cboSavedPositions);
             this.tabPageApplication.Controls.Add(this.cmdAddPause);
             this.tabPageApplication.Controls.Add(this.cmdAddMovement);
             this.tabPageApplication.Controls.Add(this.cmdSaveCSV);
@@ -112,8 +115,8 @@
             this.tabPageApplication.Controls.Add(this.materialLabel1);
             this.tabPageApplication.Controls.Add(this.trackBarGripper);
             this.tabPageApplication.Controls.Add(this.trackBarWristVert);
-            this.tabPageApplication.Controls.Add(this.trackBarWristHor);
-            this.tabPageApplication.Controls.Add(this.trackBarElbow);
+            this.tabPageApplication.Controls.Add(this.trackBarWristRot);
+            this.tabPageApplication.Controls.Add(this.trackBarEllbow);
             this.tabPageApplication.Controls.Add(this.trackBarShoulder);
             this.tabPageApplication.Controls.Add(this.trackBarBasic);
             this.tabPageApplication.Location = new System.Drawing.Point(4, 25);
@@ -124,6 +127,15 @@
             this.tabPageApplication.TabIndex = 1;
             this.tabPageApplication.Text = "Anwendung";
             this.tabPageApplication.UseVisualStyleBackColor = true;
+            // 
+            // cboSavedPositions
+            // 
+            this.cboSavedPositions.FormattingEnabled = true;
+            this.cboSavedPositions.Location = new System.Drawing.Point(226, 67);
+            this.cboSavedPositions.Name = "cboSavedPositions";
+            this.cboSavedPositions.Size = new System.Drawing.Size(302, 24);
+            this.cboSavedPositions.TabIndex = 23;
+            this.cboSavedPositions.SelectedIndexChanged += new System.EventHandler(this.cboSavedPositions_SelectedIndexChanged);
             // 
             // cmdAddPause
             // 
@@ -168,9 +180,9 @@
             this.cmdSaveCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdSaveCSV.Name = "cmdSaveCSV";
             this.cmdSaveCSV.Primary = true;
-            this.cmdSaveCSV.Size = new System.Drawing.Size(232, 36);
+            this.cmdSaveCSV.Size = new System.Drawing.Size(182, 36);
             this.cmdSaveCSV.TabIndex = 20;
-            this.cmdSaveCSV.Text = "Bewegungen speichern";
+            this.cmdSaveCSV.Text = "Ablauf speichern";
             this.cmdSaveCSV.UseVisualStyleBackColor = true;
             // 
             // cmdLoadCSV
@@ -184,9 +196,9 @@
             this.cmdLoadCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdLoadCSV.Name = "cmdLoadCSV";
             this.cmdLoadCSV.Primary = true;
-            this.cmdLoadCSV.Size = new System.Drawing.Size(194, 36);
+            this.cmdLoadCSV.Size = new System.Drawing.Size(144, 36);
             this.cmdLoadCSV.TabIndex = 19;
-            this.cmdLoadCSV.Text = "Bewegungen laden";
+            this.cmdLoadCSV.Text = "Ablauf laden";
             this.cmdLoadCSV.UseVisualStyleBackColor = true;
             // 
             // cmdDelete
@@ -364,23 +376,23 @@
             this.trackBarWristVert.TabIndex = 5;
             this.trackBarWristVert.Value = 90;
             // 
-            // trackBarWristHor
+            // trackBarWristRot
             // 
-            this.trackBarWristHor.Location = new System.Drawing.Point(226, 397);
-            this.trackBarWristHor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.trackBarWristHor.Maximum = 180;
-            this.trackBarWristHor.Name = "trackBarWristHor";
-            this.trackBarWristHor.Size = new System.Drawing.Size(302, 56);
-            this.trackBarWristHor.TabIndex = 4;
+            this.trackBarWristRot.Location = new System.Drawing.Point(226, 397);
+            this.trackBarWristRot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarWristRot.Maximum = 180;
+            this.trackBarWristRot.Name = "trackBarWristRot";
+            this.trackBarWristRot.Size = new System.Drawing.Size(302, 56);
+            this.trackBarWristRot.TabIndex = 4;
             // 
-            // trackBarElbow
+            // trackBarEllbow
             // 
-            this.trackBarElbow.Location = new System.Drawing.Point(226, 318);
-            this.trackBarElbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.trackBarElbow.Maximum = 180;
-            this.trackBarElbow.Name = "trackBarElbow";
-            this.trackBarElbow.Size = new System.Drawing.Size(302, 56);
-            this.trackBarElbow.TabIndex = 3;
+            this.trackBarEllbow.Location = new System.Drawing.Point(226, 318);
+            this.trackBarEllbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarEllbow.Maximum = 180;
+            this.trackBarEllbow.Name = "trackBarEllbow";
+            this.trackBarEllbow.Size = new System.Drawing.Size(302, 56);
+            this.trackBarEllbow.TabIndex = 3;
             // 
             // trackBarShoulder
             // 
@@ -404,7 +416,9 @@
             // 
             // tabPageConfig
             // 
-            this.tabPageConfig.Controls.Add(this.lblPortStatus);
+            this.tabPageConfig.Controls.Add(this.lblEnginePause);
+            this.tabPageConfig.Controls.Add(this.numericEnginePause);
+            this.tabPageConfig.Controls.Add(this.cmdSaveConfig);
             this.tabPageConfig.Controls.Add(this.lblPort);
             this.tabPageConfig.Controls.Add(this.cboPorts);
             this.tabPageConfig.Controls.Add(this.cmdClosePort);
@@ -418,18 +432,22 @@
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
             // 
-            // lblPortStatus
+            // cmdSaveConfig
             // 
-            this.lblPortStatus.AutoSize = true;
-            this.lblPortStatus.Depth = 0;
-            this.lblPortStatus.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblPortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPortStatus.Location = new System.Drawing.Point(22, 328);
-            this.lblPortStatus.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblPortStatus.Name = "lblPortStatus";
-            this.lblPortStatus.Size = new System.Drawing.Size(228, 24);
-            this.lblPortStatus.TabIndex = 7;
-            this.lblPortStatus.Text = "Wählen Sie einen Port aus";
+            this.cmdSaveConfig.AutoSize = true;
+            this.cmdSaveConfig.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmdSaveConfig.Depth = 0;
+            this.cmdSaveConfig.Icon = null;
+            this.cmdSaveConfig.Location = new System.Drawing.Point(26, 194);
+            this.cmdSaveConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdSaveConfig.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cmdSaveConfig.Name = "cmdSaveConfig";
+            this.cmdSaveConfig.Primary = true;
+            this.cmdSaveConfig.Size = new System.Drawing.Size(252, 36);
+            this.cmdSaveConfig.TabIndex = 7;
+            this.cmdSaveConfig.Text = "Konfiguration speichern";
+            this.cmdSaveConfig.UseVisualStyleBackColor = true;
+            this.cmdSaveConfig.Click += new System.EventHandler(this.cmdSaveConfig_Click);
             // 
             // lblPort
             // 
@@ -447,7 +465,7 @@
             // cboPorts
             // 
             this.cboPorts.FormattingEnabled = true;
-            this.cboPorts.Location = new System.Drawing.Point(85, 86);
+            this.cboPorts.Location = new System.Drawing.Point(26, 59);
             this.cboPorts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPorts.Name = "cboPorts";
             this.cboPorts.Size = new System.Drawing.Size(108, 24);
@@ -459,7 +477,7 @@
             this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdClosePort.Depth = 0;
             this.cmdClosePort.Icon = null;
-            this.cmdClosePort.Location = new System.Drawing.Point(316, 230);
+            this.cmdClosePort.Location = new System.Drawing.Point(167, 87);
             this.cmdClosePort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
@@ -475,7 +493,7 @@
             this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdOpenPort.Depth = 0;
             this.cmdOpenPort.Icon = null;
-            this.cmdOpenPort.Location = new System.Drawing.Point(316, 86);
+            this.cmdOpenPort.Location = new System.Drawing.Point(26, 87);
             this.cmdOpenPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
@@ -511,13 +529,42 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // comboBox1
+            // numericEnginePause
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(226, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(302, 24);
-            this.comboBox1.TabIndex = 23;
+            this.numericEnginePause.Location = new System.Drawing.Point(447, 72);
+            this.numericEnginePause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericEnginePause.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericEnginePause.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericEnginePause.Name = "numericEnginePause";
+            this.numericEnginePause.Size = new System.Drawing.Size(107, 22);
+            this.numericEnginePause.TabIndex = 11;
+            this.numericEnginePause.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericEnginePause.ValueChanged += new System.EventHandler(this.numericEnginePause_ValueChanged);
+            // 
+            // lblEnginePause
+            // 
+            this.lblEnginePause.AutoSize = true;
+            this.lblEnginePause.Depth = 0;
+            this.lblEnginePause.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblEnginePause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblEnginePause.Location = new System.Drawing.Point(443, 33);
+            this.lblEnginePause.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEnginePause.Name = "lblEnginePause";
+            this.lblEnginePause.Size = new System.Drawing.Size(112, 24);
+            this.lblEnginePause.TabIndex = 12;
+            this.lblEnginePause.Text = "Motorpause";
             // 
             // MainInterfacefrm
             // 
@@ -536,12 +583,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGripper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWristVert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristHor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarElbow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarWristRot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarEllbow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).EndInit();
             this.tabPageConfig.ResumeLayout(false);
             this.tabPageConfig.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEnginePause)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -560,11 +608,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton cmdClosePort;
         private MaterialSkin.Controls.MaterialLabel lblPort;
         private System.Windows.Forms.ComboBox cboPorts;
-        private MaterialSkin.Controls.MaterialLabel lblPortStatus;
         private System.Windows.Forms.TrackBar trackBarGripper;
         private System.Windows.Forms.TrackBar trackBarWristVert;
-        private System.Windows.Forms.TrackBar trackBarWristHor;
-        private System.Windows.Forms.TrackBar trackBarElbow;
+        private System.Windows.Forms.TrackBar trackBarWristRot;
+        private System.Windows.Forms.TrackBar trackBarEllbow;
         private System.Windows.Forms.TrackBar trackBarShoulder;
         private System.Windows.Forms.TrackBar trackBarBasic;
         private System.Windows.Forms.ListBox listBox1;
@@ -583,7 +630,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton cmdStart;
         private MaterialSkin.Controls.MaterialRaisedButton cmdAddMovement;
         private MaterialSkin.Controls.MaterialRaisedButton cmdAddPause;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboSavedPositions;
+        private MaterialSkin.Controls.MaterialRaisedButton cmdSaveConfig;
+        private MaterialSkin.Controls.MaterialLabel lblEnginePause;
+        private System.Windows.Forms.NumericUpDown numericEnginePause;
     }
 }
 

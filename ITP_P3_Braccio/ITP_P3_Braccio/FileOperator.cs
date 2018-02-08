@@ -11,46 +11,44 @@ namespace ITP_P3_Braccio
     {
         public static bool WriteConfig(string path, Configuration config)
         {
-
             bool operatingWell = true;
-            string textToWrite = "";
-            TextWriter tw = new StreamWriter(path);
             StringBuilder sb = new StringBuilder();
-
-            sb.Append(config.EnginePause);
-            sb.Append("\r\n");
-
-            foreach(SavedPosition p in config.StandardPositions)
-            {
-                sb.Append(p.Name);
-                sb.Append(';');
-                sb.Append(p.BasicAngle);
-                sb.Append(';');
-                sb.Append(p.SoulderAngle);
-                sb.Append(';');
-                sb.Append(p.EllbowAngle);
-                sb.Append(';');
-                sb.Append(p.HandAngle_ver);
-                sb.Append(';');
-                sb.Append(p.HandAngle_rot);
-                sb.Append(';');
-                sb.Append(p.Gripper);
-                sb.Append("\r\n");
-            }
+            TextWriter tw;
 
             try
             {
-                tw.Write(textToWrite);
+                using (tw = new StreamWriter(path)) // disposes tw after use
+                {
+                    sb.Append(config.EnginePause);
+                    sb.Append("\r\n");
+
+                    foreach (SavedPosition p in config.StandardPositions)
+                    {
+                        sb.Append(p.Name);
+                        sb.Append(';');
+                        sb.Append(p.BasicAngle);
+                        sb.Append(';');
+                        sb.Append(p.SoulderAngle);
+                        sb.Append(';');
+                        sb.Append(p.EllbowAngle);
+                        sb.Append(';');
+                        sb.Append(p.HandAngle_ver);
+                        sb.Append(';');
+                        sb.Append(p.HandAngle_rot);
+                        sb.Append(';');
+                        sb.Append(p.Gripper);
+                        sb.Append("\r\n");
+                    }
+
+                    tw.Write(sb.ToString());
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
                 operatingWell = false;
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
-            finally
-            {
-                tw.Close();
-            }
+            
             return operatingWell;
         }
 
@@ -60,20 +58,23 @@ namespace ITP_P3_Braccio
             string[] cellValues;
             Configuration config = new Configuration();
 
-            if (File.Exists(path))
+            try
             {
-                StreamReader sr = new StreamReader(path);
-                try
+                using (StreamReader sr = new StreamReader(path))
                 {
                     // read enginePause from first line
-                    if(sr.Peek() != -1)
+                    if (sr.Peek() != -1)
                     {
                         rowValue = sr.ReadLine();
                         config.EnginePause = Int32.Parse(rowValue);
                     }
+                    else
+                    {
+                        throw new IOException("file is empty");
+                    }
 
                     // read saved Positions from other lines
-                    for(int i = 0; sr.Peek() != -1; i++)
+                    for (int i = 0; sr.Peek() != -1; i++)
                     {
                         rowValue = sr.ReadLine();
                         cellValues = rowValue.Split(';');
@@ -90,15 +91,12 @@ namespace ITP_P3_Braccio
 
                     }
                 }
-                catch (Exception e)
-                {
-                    throw new Exception(e.Message);
-                }
-                finally
-                {
-                    sr.Close();
-                }
             }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            
             return config;
         }
     }
