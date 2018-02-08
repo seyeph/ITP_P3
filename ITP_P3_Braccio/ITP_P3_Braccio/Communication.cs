@@ -19,9 +19,9 @@ namespace ITP_P3_Braccio
             {
                 sPort.Open();
                 sb.Clear();
-                foreach (Movement m in controlList)
+                foreach (IMovement m in controlList)
                 {
-                    // parses the Movement into a Position if possible
+                    // parses the IMovement into a Position if possible
                     // and writes it to the serial port
                     if (m is Position position) 
                     {

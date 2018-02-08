@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class ControlList : IEnumerable<Movement>
+    public class ControlList : IEnumerable<IMovement>
     {
-        private List<Movement> controlList = new List<Movement>();
+        private List<IMovement> controlList = new List<IMovement>();
 
         #region Add
         //method to add a Position or a Pause
   
-        public void Add(Movement p)
+        public void Add(IMovement p)
         {
             controlList.Add(p);
         }
         #endregion
 
         #region Remove
-        public void Remove(Movement p) {
+        public void Remove(IMovement p) {
             controlList.Remove(p);
         }
         #endregion
 
         #region GetEnumerator
-        IEnumerator<Movement> IEnumerable<Movement>.GetEnumerator()
+        IEnumerator<IMovement> IEnumerable<IMovement>.GetEnumerator()
         {
             return controlList.GetEnumerator();
         }
