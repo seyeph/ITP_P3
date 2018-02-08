@@ -7,9 +7,9 @@ using System.IO;
 
 namespace ITP_P3_Braccio
 {
-    class FileOperator
+    public static class FileOperator
     {
-        public bool WriteConfig(string path, Configuration config)
+        public static bool WriteConfig(string path, Configuration config)
         {
 
             bool operatingWell = true;
@@ -54,7 +54,7 @@ namespace ITP_P3_Braccio
             return operatingWell;
         }
 
-        public Configuration ReadConfig(string path)
+        public static Configuration ReadConfig(string path)
         {
             string rowValue;
             string[] cellValues;
