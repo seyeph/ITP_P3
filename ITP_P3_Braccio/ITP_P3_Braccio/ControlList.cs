@@ -20,13 +20,13 @@ namespace ITP_P3_Braccio
         }
         #endregion
 
-
         #region Remove
         public void Remove(Movement p) {
             controlList.Remove(p);
         }
+        #endregion
 
-
+        #region GetEnumerator
         IEnumerator<Movement> IEnumerable<Movement>.GetEnumerator()
         {
             return controlList.GetEnumerator();

@@ -13,7 +13,7 @@ namespace ITP_P3_Braccio
         public int BasicAngle { get; set; } //Winkel um Roboter zu drehen
         public int SoulderAngle { get; set; } 
         public int EllbowAngle { get; set; }
-        public int HandAngle_hor { get; set; }
+        public int HandAngle_rot { get; set; }
         public int HandAngle_ver { get; set; }
         public int Gripper { get; set; }
 
@@ -25,7 +25,7 @@ namespace ITP_P3_Braccio
             this.BasicAngle = BasicAngle;
             this.SoulderAngle = SoulderAngle;
             this.EllbowAngle = EllbowAngle;
-            this.HandAngle_hor = HandAngle_hor;
+            this.HandAngle_rot = HandAngle_hor;
             this.HandAngle_ver = HandAngle_ver;
             this.Gripper = Gripper;
         }

@@ -21,9 +21,10 @@ namespace ITP_P3_Braccio
                 sb.Clear();
                 foreach (Movement m in controlList)
                 {
-                    if (m is Position)
+                    // parses the Movement into a Position if possible
+                    // and writes it to the serial port
+                    if (m is Position position) 
                     {
-                        Position position = (Position)m;
                         sb.Append(motorPause);
                         sb.Append(';');
                         sb.Append(position.BasicAngle);
@@ -34,12 +35,12 @@ namespace ITP_P3_Braccio
                         sb.Append(';');
                         sb.Append(position.HandAngle_ver);
                         sb.Append(';');
-                        sb.Append(position.HandAngle_hor);
+                        sb.Append(position.HandAngle_rot);
                         sb.Append(';');
                         sb.Append(position.Gripper);
 
                         sPort.Write(sb.ToString());
-                        sPort.ReadExisting();
+                        sPort.ReadExisting();   // wait for message
                     }
                     else
                     {
