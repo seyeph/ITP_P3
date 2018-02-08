@@ -58,12 +58,12 @@
     <Compile Include="MainInterfacefrm.Designer.cs">
       <DependentUpon>MainInterfacefrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movement.cs" />
-    <Compile Include="Pause.cs" />
-    <Compile Include="Position.cs" />
+    <Compile Include="Movements\Movement.cs" />
+    <Compile Include="Movements\Pause.cs" />
+    <Compile Include="Movements\Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SavedPosition.cs" />
+    <Compile Include="Movements\SavedPosition.cs" />
     <EmbeddedResource Include="MainInterfacefrm.resx">
       <DependentUpon>MainInterfacefrm.cs</DependentUpon>
     </EmbeddedResource>
