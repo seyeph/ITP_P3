@@ -9,7 +9,7 @@ namespace ITP_P3_Braccio
 {
     class FileOperator
     {
-        public bool writeConfig(string path, Configuration config)
+        public bool WriteConfig(string path, Configuration config)
         {
 
             bool operatingWell = true;
@@ -54,7 +54,7 @@ namespace ITP_P3_Braccio
             return operatingWell;
         }
 
-        public Configuration readConfig(string path)
+        public Configuration ReadConfig(string path)
         {
             string rowValue;
             string[] cellValues;

@@ -12,9 +12,9 @@ using MaterialSkin.Controls;
 
 namespace ITP_P3_Braccio
 {
-    public partial class Form1 : MaterialForm
+    public partial class MainInterfacefrm : MaterialForm
     {
-        public Form1()
+        public MainInterfacefrm()
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
