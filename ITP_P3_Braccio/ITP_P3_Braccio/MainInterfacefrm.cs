@@ -43,6 +43,8 @@ namespace ITP_P3_Braccio
             #region initializeControls
             cboPorts.Items.AddRange(SerialPort.GetPortNames());
             numericEnginePause.Value = config.EnginePause;
+            cboSavedPositions.Items.Add("slider input");
+            cboSavedPositions.SelectedIndex = 0;
             foreach(SavedPosition p in config.StandardPositions)
             {
                 cboSavedPositions.Items.Add(p.Name);
@@ -77,14 +79,17 @@ namespace ITP_P3_Braccio
 
         private void cboSavedPositions_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //  get position from config
-            SavedPosition position = config.GetMove(cboSavedPositions.SelectedItem.ToString());
-            trackBarBasic.Value = position.BasicAngle;
-            trackBarShoulder.Value = position.SoulderAngle;
-            trackBarEllbow.Value = position.EllbowAngle;
-            trackBarWristVert.Value = position.HandAngle_ver;
-            trackBarWristRot.Value = position.HandAngle_rot;
-            trackBarGripper.Value = position.Gripper;
+            if (cboSavedPositions.SelectedIndex != 0)
+            {
+                //  get position from config
+                SavedPosition position = config.GetMove(cboSavedPositions.SelectedItem.ToString());
+                trackBarBasic.Value = position.BasicAngle;
+                trackBarShoulder.Value = position.SoulderAngle;
+                trackBarEllbow.Value = position.EllbowAngle;
+                trackBarWristVert.Value = position.HandAngle_ver;
+                trackBarWristRot.Value = position.HandAngle_rot;
+                trackBarGripper.Value = position.Gripper;
+            }
         }
 
         private void numericEnginePause_ValueChanged(object sender, EventArgs e)

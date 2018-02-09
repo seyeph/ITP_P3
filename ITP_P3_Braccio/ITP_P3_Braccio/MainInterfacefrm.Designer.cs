@@ -55,6 +55,8 @@
             this.trackBarShoulder = new System.Windows.Forms.TrackBar();
             this.trackBarBasic = new System.Windows.Forms.TrackBar();
             this.tabPageConfig = new System.Windows.Forms.TabPage();
+            this.lblEnginePause = new MaterialSkin.Controls.MaterialLabel();
+            this.numericEnginePause = new System.Windows.Forms.NumericUpDown();
             this.cmdSaveConfig = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lblPort = new MaterialSkin.Controls.MaterialLabel();
             this.cboPorts = new System.Windows.Forms.ComboBox();
@@ -65,8 +67,6 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.numericEnginePause = new System.Windows.Forms.NumericUpDown();
-            this.lblEnginePause = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPageApplication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).BeginInit();
@@ -130,6 +130,8 @@
             // 
             // cboSavedPositions
             // 
+            this.cboSavedPositions.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.cboSavedPositions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSavedPositions.FormattingEnabled = true;
             this.cboSavedPositions.Location = new System.Drawing.Point(226, 67);
             this.cboSavedPositions.Name = "cboSavedPositions";
@@ -432,6 +434,43 @@
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
             // 
+            // lblEnginePause
+            // 
+            this.lblEnginePause.AutoSize = true;
+            this.lblEnginePause.Depth = 0;
+            this.lblEnginePause.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblEnginePause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblEnginePause.Location = new System.Drawing.Point(443, 33);
+            this.lblEnginePause.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEnginePause.Name = "lblEnginePause";
+            this.lblEnginePause.Size = new System.Drawing.Size(112, 24);
+            this.lblEnginePause.TabIndex = 12;
+            this.lblEnginePause.Text = "Motorpause";
+            // 
+            // numericEnginePause
+            // 
+            this.numericEnginePause.Location = new System.Drawing.Point(447, 72);
+            this.numericEnginePause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericEnginePause.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericEnginePause.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericEnginePause.Name = "numericEnginePause";
+            this.numericEnginePause.Size = new System.Drawing.Size(107, 22);
+            this.numericEnginePause.TabIndex = 11;
+            this.numericEnginePause.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericEnginePause.ValueChanged += new System.EventHandler(this.numericEnginePause_ValueChanged);
+            // 
             // cmdSaveConfig
             // 
             this.cmdSaveConfig.AutoSize = true;
@@ -528,43 +567,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // numericEnginePause
-            // 
-            this.numericEnginePause.Location = new System.Drawing.Point(447, 72);
-            this.numericEnginePause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericEnginePause.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.numericEnginePause.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericEnginePause.Name = "numericEnginePause";
-            this.numericEnginePause.Size = new System.Drawing.Size(107, 22);
-            this.numericEnginePause.TabIndex = 11;
-            this.numericEnginePause.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericEnginePause.ValueChanged += new System.EventHandler(this.numericEnginePause_ValueChanged);
-            // 
-            // lblEnginePause
-            // 
-            this.lblEnginePause.AutoSize = true;
-            this.lblEnginePause.Depth = 0;
-            this.lblEnginePause.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblEnginePause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblEnginePause.Location = new System.Drawing.Point(443, 33);
-            this.lblEnginePause.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblEnginePause.Name = "lblEnginePause";
-            this.lblEnginePause.Size = new System.Drawing.Size(112, 24);
-            this.lblEnginePause.TabIndex = 12;
-            this.lblEnginePause.Text = "Motorpause";
             // 
             // MainInterfacefrm
             // 
