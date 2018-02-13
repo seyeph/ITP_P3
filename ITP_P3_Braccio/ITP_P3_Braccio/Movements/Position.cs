@@ -30,5 +30,9 @@ namespace ITP_P3_Braccio
             this.Gripper = Gripper;
         }
 
+        public string ToString() {
+            return this.BasicAngle + ";" + this.SoulderAngle + ";" + this.EllbowAngle + ";" + this.HandAngle_ver + ";" + this.HandAngle_rot + ";" + this.Gripper;
+        }
+
     }
 }

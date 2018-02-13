@@ -98,5 +98,20 @@ namespace ITP_P3_Braccio
         }
 
         #endregion
+<<<<<<< HEAD
+
+        private void cmdAddMovement_Click(object sender, EventArgs e)
+        {
+            Position position = new Position(trackBarBasic.Value, trackBarShoulder.Value, trackBarEllbow.Value, trackBarWristRot.Value, trackBarWristVert.Value, trackBarGripper.Value);
+            controlList.Add(position);
+            lboControlList.Items.Add(position.ToString());
+        }
+
+        private void cmdDelete_Click(object sender, EventArgs e)
+        {
+            //lboControlList.SelectedIndex();
+        }
+=======
+>>>>>>> b7faeff462e96c454a1da1e7e669e6483609090a
     }
 }
