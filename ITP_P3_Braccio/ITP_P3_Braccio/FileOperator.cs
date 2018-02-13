@@ -91,15 +91,15 @@ namespace ITP_P3_Braccio
                     }
                 }
             }
-            catch (Exception e)             //if something went wrong exception is thrown
+            catch (Exception e)                     //if something went wrong exception is thrown
             {
-                throw new Exception(e.Message);
+                throw new Exception(e.Message);     //throw exception
             }
             
-            return config;
+            return config;                          //return whole configuration
         }
 
-        public static bool WriteMovement(string path, ControlList list)
+        public static bool WriteMovement(string path, ControlList list)     //write movements from program to file
         {
             return true;
         }

@@ -34,7 +34,7 @@ namespace ITP_P3_Braccio
             catch (Exception)
             {
                 MessageBox.Show("Konfiguration konnte nicht gelesen werden.\nStandardkonfiguration wurde erstellt");
-                config = new Configuration() { EnginePause = 20};
+                config = new Configuration() { EnginePause = 20 };
 
                 // add standard positions
             }
@@ -45,7 +45,7 @@ namespace ITP_P3_Braccio
             numericEnginePause.Value = config.EnginePause;
             cboSavedPositions.Items.Add("slider input");
             cboSavedPositions.SelectedIndex = 0;
-            foreach(SavedPosition p in config.StandardPositions)
+            foreach (SavedPosition p in config.StandardPositions)
             {
                 cboSavedPositions.Items.Add(p.Name);
             }
@@ -71,7 +71,7 @@ namespace ITP_P3_Braccio
             {
                 FileOperator.WriteConfig(configPath, config);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Konfiguration konnte nicht gespeichert werden");
             }
@@ -103,12 +103,46 @@ namespace ITP_P3_Braccio
         {
             Position position = new Position(trackBarBasic.Value, trackBarShoulder.Value, trackBarEllbow.Value, trackBarWristRot.Value, trackBarWristVert.Value, trackBarGripper.Value);
             controlList.Add(position);
-            listBox1.Items.Add(position.ToString());
+            lboControlList.Items.Add(position.ToString());
         }
 
         private void cmdDelete_Click(object sender, EventArgs e)
         {
-            //lboControlList.SelectedIndex();
+            try
+            {
+                if (lboControlList.SelectedIndex == -1) { throw new IndexOutOfRangeException(); }
+                else
+                {
+                    controlList.Remove(lboControlList.SelectedIndex);
+                    lboControlList.Items.Remove(lboControlList.SelectedItem);
+                    lboControlList.Show();
+                }
+
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("Kein Element zum Entfernen ausgewählt!");
+            }
+
+        }
+
+        private void cmdStart_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                Communication.Move(serialPort1, config.EnginePause, controlList);
+            }
+            else
+            {
+                MessageBox.Show("Port ist noch nicht geöffnet!");
+            }
+        }
+
+        private void cmdAddPause_Click(object sender, EventArgs e)
+        {
+            Pause pause = new Pause(Convert.ToInt32(nudPause.Value));
+            controlList.Add(pause);
+            lboControlList.Items.Add(pause.ToString());
         }
     }
 }
