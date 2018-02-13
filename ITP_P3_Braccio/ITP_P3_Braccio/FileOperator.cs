@@ -13,19 +13,19 @@ namespace ITP_P3_Braccio
         {
             bool operatingWell = true;              //shows, if operation has gone fine or wrong
             StringBuilder sb = new StringBuilder(); //in sb the whole text, which has to be saved in the file, is stored
-            TextWriter tw;
+            TextWriter tw;                          //TextWrite to write into the file
 
             try
             {
                 using (tw = new StreamWriter(path)) // disposes tw after use
                 {
-                    sb.Append(config.EnginePause);
+                    sb.Append(config.EnginePause);  //write(append) EnginePause(first line in file) into sb
                     sb.Append("\r\n");
 
-                    foreach (SavedPosition p in config.StandardPositions)
+                    foreach (SavedPosition p in config.StandardPositions) //run through all Positions in config
                     {
-                        sb.Append(p.Name);
-                        sb.Append(';');
+                        sb.Append(p.Name);          //always append one part of the config to the sb
+                        sb.Append(';');             //and then always append a simicolon or carriage return line feed
                         sb.Append(p.BasicAngle);
                         sb.Append(';');
                         sb.Append(p.SoulderAngle);
@@ -40,10 +40,10 @@ namespace ITP_P3_Braccio
                         sb.Append("\r\n");
                     }
 
-                    tw.Write(sb.ToString());
+                    tw.Write(sb.ToString());        //now the content of sb is really written into the file
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex)                    //if something went wrong exception is thrown and "false" is returned
             {
                 operatingWell = false;
                 throw new Exception(ex.Message);
