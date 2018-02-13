@@ -96,8 +96,7 @@ namespace ITP_P3_Braccio
         {
             config.EnginePause = (int)numericEnginePause.Value;
         }
+
         #endregion
-
-
     }
 }

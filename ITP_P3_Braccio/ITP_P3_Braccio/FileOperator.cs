@@ -11,8 +11,8 @@ namespace ITP_P3_Braccio
     {
         public static bool WriteConfig(string path, Configuration config)
         {
-            bool operatingWell = true;
-            StringBuilder sb = new StringBuilder();
+            bool operatingWell = true;              //shows, if operation has gone fine or wrong
+            StringBuilder sb = new StringBuilder(); //in sb the whole text, which has to be saved in the file, is stored
             TextWriter tw;
 
             try
@@ -88,7 +88,6 @@ namespace ITP_P3_Braccio
                                 Int32.Parse(cellValues[5]), // Wrist_rot
                                 Int32.Parse(cellValues[6])  // Gripper
                                 ));
-
                     }
                 }
             }
@@ -98,6 +97,11 @@ namespace ITP_P3_Braccio
             }
             
             return config;
+        }
+
+        public static bool WriteMovement(string path, ControlList list)
+        {
+
         }
     }
 }
