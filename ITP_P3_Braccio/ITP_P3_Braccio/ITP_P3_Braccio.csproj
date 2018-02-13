@@ -58,7 +58,7 @@
     <Compile Include="MainInterfacefrm.Designer.cs">
       <DependentUpon>MainInterfacefrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movements\Movement.cs" />
+    <Compile Include="Movements\IMovement.cs" />
     <Compile Include="Movements\Pause.cs" />
     <Compile Include="Movements\Position.cs" />
     <Compile Include="Program.cs" />
