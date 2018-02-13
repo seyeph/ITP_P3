@@ -17,7 +17,7 @@ namespace ITP_P3_Braccio
     public partial class MainInterfacefrm : MaterialForm
     {
         #region variables
-        private Configuration config;
+        private Configuration config;   // configuration
         private ControlList controlList;
         private string configPath = "./ProgramData/config.csv";
         #endregion
