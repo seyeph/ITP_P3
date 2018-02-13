@@ -96,8 +96,13 @@ namespace ITP_P3_Braccio
         {
             config.EnginePause = (int)numericEnginePause.Value;
         }
+
         #endregion
 
-
+        private void cmdAddMovement_Click(object sender, EventArgs e)
+        {
+            Position position = new Position(trackBarBasic.Value, trackBarShoulder.Value, trackBarEllbow.Value, trackBarWristRot.Value, trackBarWristVert.Value, trackBarGripper.Value);
+            
+        }
     }
 }

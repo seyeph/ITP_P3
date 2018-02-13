@@ -45,7 +45,7 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lblPause = new MaterialSkin.Controls.MaterialLabel();
             this.nudPause = new System.Windows.Forms.NumericUpDown();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lboControlList = new System.Windows.Forms.ListBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.trackBarGripper = new System.Windows.Forms.TrackBar();
@@ -110,7 +110,7 @@
             this.tabPageApplication.Controls.Add(this.materialLabel3);
             this.tabPageApplication.Controls.Add(this.lblPause);
             this.tabPageApplication.Controls.Add(this.nudPause);
-            this.tabPageApplication.Controls.Add(this.listBox1);
+            this.tabPageApplication.Controls.Add(this.lboControlList);
             this.tabPageApplication.Controls.Add(this.materialLabel2);
             this.tabPageApplication.Controls.Add(this.materialLabel1);
             this.tabPageApplication.Controls.Add(this.trackBarGripper);
@@ -170,6 +170,7 @@
             this.cmdAddMovement.TabIndex = 21;
             this.cmdAddMovement.Text = "Bewegung hinzufügen";
             this.cmdAddMovement.UseVisualStyleBackColor = true;
+            this.cmdAddMovement.Click += new System.EventHandler(this.cmdAddMovement_Click);
             // 
             // cmdSaveCSV
             // 
@@ -321,15 +322,15 @@
             this.nudPause.Size = new System.Drawing.Size(107, 22);
             this.nudPause.TabIndex = 10;
             // 
-            // listBox1
+            // lboControlList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(572, 103);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(352, 420);
-            this.listBox1.TabIndex = 9;
+            this.lboControlList.FormattingEnabled = true;
+            this.lboControlList.ItemHeight = 16;
+            this.lboControlList.Location = new System.Drawing.Point(572, 119);
+            this.lboControlList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lboControlList.Name = "lboControlList";
+            this.lboControlList.Size = new System.Drawing.Size(396, 404);
+            this.lboControlList.TabIndex = 9;
             // 
             // materialLabel2
             // 
@@ -616,7 +617,7 @@
         private System.Windows.Forms.TrackBar trackBarEllbow;
         private System.Windows.Forms.TrackBar trackBarShoulder;
         private System.Windows.Forms.TrackBar trackBarBasic;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lboControlList;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel lblPause;
