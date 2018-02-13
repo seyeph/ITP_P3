@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class Position : Movement
+    public class Position : IMovement
     {
 
         //Getter / Setter für Winkel

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITP_P3_Braccio
 {
-    public class Pause : Movement
+    public class Pause : IMovement
     {
         public int Pause_ms { get; set; }
     }
