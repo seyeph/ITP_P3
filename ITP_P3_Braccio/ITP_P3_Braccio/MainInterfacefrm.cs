@@ -103,7 +103,7 @@ namespace ITP_P3_Braccio
         {
             Position position = new Position(trackBarBasic.Value, trackBarShoulder.Value, trackBarEllbow.Value, trackBarWristRot.Value, trackBarWristVert.Value, trackBarGripper.Value);
             controlList.Add(position);
-            listBox1.Items.Add(position.ToString());
+            lboMovements.Items.Add(position.ToString());
         }
 
         private void cmdDelete_Click(object sender, EventArgs e)

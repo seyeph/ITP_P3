@@ -45,7 +45,7 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lblPause = new MaterialSkin.Controls.MaterialLabel();
             this.nudPause = new System.Windows.Forms.NumericUpDown();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lboMovements = new System.Windows.Forms.ListBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.trackBarGripper = new System.Windows.Forms.TrackBar();
@@ -86,12 +86,12 @@
             this.materialTabControl1.Controls.Add(this.tabPageConfig);
             this.materialTabControl1.Controls.Add(this.tabPageHelp);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(11, 137);
+            this.materialTabControl1.Location = new System.Drawing.Point(12, 171);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1052, 754);
+            this.materialTabControl1.Size = new System.Drawing.Size(1184, 942);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPageApplication
@@ -110,7 +110,7 @@
             this.tabPageApplication.Controls.Add(this.materialLabel3);
             this.tabPageApplication.Controls.Add(this.lblPause);
             this.tabPageApplication.Controls.Add(this.nudPause);
-            this.tabPageApplication.Controls.Add(this.listBox1);
+            this.tabPageApplication.Controls.Add(this.lboMovements);
             this.tabPageApplication.Controls.Add(this.materialLabel2);
             this.tabPageApplication.Controls.Add(this.materialLabel1);
             this.tabPageApplication.Controls.Add(this.trackBarGripper);
@@ -119,11 +119,11 @@
             this.tabPageApplication.Controls.Add(this.trackBarEllbow);
             this.tabPageApplication.Controls.Add(this.trackBarShoulder);
             this.tabPageApplication.Controls.Add(this.trackBarBasic);
-            this.tabPageApplication.Location = new System.Drawing.Point(4, 25);
+            this.tabPageApplication.Location = new System.Drawing.Point(4, 29);
             this.tabPageApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageApplication.Name = "tabPageApplication";
             this.tabPageApplication.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageApplication.Size = new System.Drawing.Size(1044, 725);
+            this.tabPageApplication.Size = new System.Drawing.Size(1176, 909);
             this.tabPageApplication.TabIndex = 1;
             this.tabPageApplication.Text = "Anwendung";
             this.tabPageApplication.UseVisualStyleBackColor = true;
@@ -133,9 +133,10 @@
             this.cboSavedPositions.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.cboSavedPositions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSavedPositions.FormattingEnabled = true;
-            this.cboSavedPositions.Location = new System.Drawing.Point(226, 67);
+            this.cboSavedPositions.Location = new System.Drawing.Point(254, 84);
+            this.cboSavedPositions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboSavedPositions.Name = "cboSavedPositions";
-            this.cboSavedPositions.Size = new System.Drawing.Size(302, 24);
+            this.cboSavedPositions.Size = new System.Drawing.Size(339, 28);
             this.cboSavedPositions.TabIndex = 23;
             this.cboSavedPositions.SelectedIndexChanged += new System.EventHandler(this.cboSavedPositions_SelectedIndexChanged);
             // 
@@ -145,12 +146,12 @@
             this.cmdAddPause.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdAddPause.Depth = 0;
             this.cmdAddPause.Icon = null;
-            this.cmdAddPause.Location = new System.Drawing.Point(808, 552);
+            this.cmdAddPause.Location = new System.Drawing.Point(909, 690);
             this.cmdAddPause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdAddPause.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdAddPause.Name = "cmdAddPause";
             this.cmdAddPause.Primary = true;
-            this.cmdAddPause.Size = new System.Drawing.Size(185, 36);
+            this.cmdAddPause.Size = new System.Drawing.Size(219, 36);
             this.cmdAddPause.TabIndex = 22;
             this.cmdAddPause.Text = "Pause hinzufügen";
             this.cmdAddPause.UseVisualStyleBackColor = true;
@@ -161,12 +162,12 @@
             this.cmdAddMovement.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdAddMovement.Depth = 0;
             this.cmdAddMovement.Icon = null;
-            this.cmdAddMovement.Location = new System.Drawing.Point(226, 662);
+            this.cmdAddMovement.Location = new System.Drawing.Point(254, 828);
             this.cmdAddMovement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdAddMovement.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdAddMovement.Name = "cmdAddMovement";
             this.cmdAddMovement.Primary = true;
-            this.cmdAddMovement.Size = new System.Drawing.Size(223, 36);
+            this.cmdAddMovement.Size = new System.Drawing.Size(265, 36);
             this.cmdAddMovement.TabIndex = 21;
             this.cmdAddMovement.Text = "Bewegung hinzufügen";
             this.cmdAddMovement.UseVisualStyleBackColor = true;
@@ -177,12 +178,12 @@
             this.cmdSaveCSV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdSaveCSV.Depth = 0;
             this.cmdSaveCSV.Icon = null;
-            this.cmdSaveCSV.Location = new System.Drawing.Point(800, 662);
+            this.cmdSaveCSV.Location = new System.Drawing.Point(900, 828);
             this.cmdSaveCSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdSaveCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdSaveCSV.Name = "cmdSaveCSV";
             this.cmdSaveCSV.Primary = true;
-            this.cmdSaveCSV.Size = new System.Drawing.Size(182, 36);
+            this.cmdSaveCSV.Size = new System.Drawing.Size(215, 36);
             this.cmdSaveCSV.TabIndex = 20;
             this.cmdSaveCSV.Text = "Ablauf speichern";
             this.cmdSaveCSV.UseVisualStyleBackColor = true;
@@ -193,12 +194,12 @@
             this.cmdLoadCSV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdLoadCSV.Depth = 0;
             this.cmdLoadCSV.Icon = null;
-            this.cmdLoadCSV.Location = new System.Drawing.Point(800, 618);
+            this.cmdLoadCSV.Location = new System.Drawing.Point(900, 772);
             this.cmdLoadCSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdLoadCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdLoadCSV.Name = "cmdLoadCSV";
             this.cmdLoadCSV.Primary = true;
-            this.cmdLoadCSV.Size = new System.Drawing.Size(144, 36);
+            this.cmdLoadCSV.Size = new System.Drawing.Size(169, 36);
             this.cmdLoadCSV.TabIndex = 19;
             this.cmdLoadCSV.Text = "Ablauf laden";
             this.cmdLoadCSV.UseVisualStyleBackColor = true;
@@ -209,12 +210,12 @@
             this.cmdDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdDelete.Depth = 0;
             this.cmdDelete.Icon = null;
-            this.cmdDelete.Location = new System.Drawing.Point(572, 662);
+            this.cmdDelete.Location = new System.Drawing.Point(644, 828);
             this.cmdDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdDelete.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdDelete.Name = "cmdDelete";
             this.cmdDelete.Primary = true;
-            this.cmdDelete.Size = new System.Drawing.Size(195, 36);
+            this.cmdDelete.Size = new System.Drawing.Size(231, 36);
             this.cmdDelete.TabIndex = 18;
             this.cmdDelete.Text = "Bewegung löschen";
             this.cmdDelete.UseVisualStyleBackColor = true;
@@ -225,12 +226,12 @@
             this.cmdStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdStart.Depth = 0;
             this.cmdStart.Icon = null;
-            this.cmdStart.Location = new System.Drawing.Point(572, 618);
+            this.cmdStart.Location = new System.Drawing.Point(644, 772);
             this.cmdStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdStart.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdStart.Name = "cmdStart";
             this.cmdStart.Primary = true;
-            this.cmdStart.Size = new System.Drawing.Size(75, 36);
+            this.cmdStart.Size = new System.Drawing.Size(87, 36);
             this.cmdStart.TabIndex = 17;
             this.cmdStart.Text = "Start";
             this.cmdStart.UseVisualStyleBackColor = true;
@@ -241,10 +242,10 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(20, 599);
+            this.materialLabel7.Location = new System.Drawing.Point(22, 749);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(67, 24);
+            this.materialLabel7.Size = new System.Drawing.Size(78, 27);
             this.materialLabel7.TabIndex = 16;
             this.materialLabel7.Text = "Greifer";
             // 
@@ -254,10 +255,10 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(16, 501);
+            this.materialLabel6.Location = new System.Drawing.Point(18, 626);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(185, 24);
+            this.materialLabel6.Size = new System.Drawing.Size(214, 27);
             this.materialLabel6.TabIndex = 15;
             this.materialLabel6.Text = "Handgelenk Drehung";
             // 
@@ -267,10 +268,10 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(16, 411);
+            this.materialLabel5.Location = new System.Drawing.Point(18, 514);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(177, 24);
+            this.materialLabel5.Size = new System.Drawing.Size(203, 27);
             this.materialLabel5.TabIndex = 14;
             this.materialLabel5.Text = "Handgelenk vertikal";
             // 
@@ -280,10 +281,10 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(16, 318);
+            this.materialLabel4.Location = new System.Drawing.Point(18, 398);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(104, 24);
+            this.materialLabel4.Size = new System.Drawing.Size(120, 27);
             this.materialLabel4.TabIndex = 13;
             this.materialLabel4.Text = "Ellenbogen";
             // 
@@ -293,10 +294,10 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(16, 228);
+            this.materialLabel3.Location = new System.Drawing.Point(18, 285);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(78, 24);
+            this.materialLabel3.Size = new System.Drawing.Size(92, 27);
             this.materialLabel3.TabIndex = 12;
             this.materialLabel3.Text = "Schulter";
             // 
@@ -306,30 +307,30 @@
             this.lblPause.Depth = 0;
             this.lblPause.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPause.Location = new System.Drawing.Point(568, 560);
+            this.lblPause.Location = new System.Drawing.Point(639, 700);
             this.lblPause.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPause.Name = "lblPause";
-            this.lblPause.Size = new System.Drawing.Size(62, 24);
+            this.lblPause.Size = new System.Drawing.Size(73, 27);
             this.lblPause.TabIndex = 11;
             this.lblPause.Text = "Pause";
             // 
             // nudPause
             // 
-            this.nudPause.Location = new System.Drawing.Point(695, 560);
+            this.nudPause.Location = new System.Drawing.Point(782, 700);
             this.nudPause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPause.Name = "nudPause";
-            this.nudPause.Size = new System.Drawing.Size(107, 22);
+            this.nudPause.Size = new System.Drawing.Size(120, 26);
             this.nudPause.TabIndex = 10;
             // 
-            // listBox1
+            // lboMovements
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(572, 103);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(352, 420);
-            this.listBox1.TabIndex = 9;
+            this.lboMovements.FormattingEnabled = true;
+            this.lboMovements.ItemHeight = 20;
+            this.lboMovements.Location = new System.Drawing.Point(644, 129);
+            this.lboMovements.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lboMovements.Name = "lboMovements";
+            this.lboMovements.Size = new System.Drawing.Size(396, 524);
+            this.lboMovements.TabIndex = 9;
             // 
             // materialLabel2
             // 
@@ -337,10 +338,10 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(32, 39);
+            this.materialLabel2.Location = new System.Drawing.Point(36, 49);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(581, 24);
+            this.materialLabel2.Size = new System.Drawing.Size(662, 27);
             this.materialLabel2.TabIndex = 8;
             this.materialLabel2.Text = "Geben Sie die Position der Teile in Grad an oder wählen sie eine aus";
             // 
@@ -350,70 +351,70 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(16, 136);
+            this.materialLabel1.Location = new System.Drawing.Point(18, 170);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(62, 24);
+            this.materialLabel1.Size = new System.Drawing.Size(71, 27);
             this.materialLabel1.TabIndex = 7;
             this.materialLabel1.Text = "Basic ";
             // 
             // trackBarGripper
             // 
-            this.trackBarGripper.Location = new System.Drawing.Point(226, 592);
+            this.trackBarGripper.Location = new System.Drawing.Point(254, 740);
             this.trackBarGripper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarGripper.Maximum = 73;
             this.trackBarGripper.Minimum = 10;
             this.trackBarGripper.Name = "trackBarGripper";
-            this.trackBarGripper.Size = new System.Drawing.Size(302, 56);
+            this.trackBarGripper.Size = new System.Drawing.Size(340, 69);
             this.trackBarGripper.TabIndex = 6;
             this.trackBarGripper.Value = 10;
             // 
             // trackBarWristVert
             // 
-            this.trackBarWristVert.Location = new System.Drawing.Point(226, 481);
+            this.trackBarWristVert.Location = new System.Drawing.Point(254, 601);
             this.trackBarWristVert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarWristVert.Maximum = 180;
             this.trackBarWristVert.Name = "trackBarWristVert";
-            this.trackBarWristVert.Size = new System.Drawing.Size(302, 56);
+            this.trackBarWristVert.Size = new System.Drawing.Size(340, 69);
             this.trackBarWristVert.TabIndex = 5;
             this.trackBarWristVert.Value = 90;
             // 
             // trackBarWristRot
             // 
-            this.trackBarWristRot.Location = new System.Drawing.Point(226, 397);
+            this.trackBarWristRot.Location = new System.Drawing.Point(254, 496);
             this.trackBarWristRot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarWristRot.Maximum = 180;
             this.trackBarWristRot.Name = "trackBarWristRot";
-            this.trackBarWristRot.Size = new System.Drawing.Size(302, 56);
+            this.trackBarWristRot.Size = new System.Drawing.Size(340, 69);
             this.trackBarWristRot.TabIndex = 4;
             // 
             // trackBarEllbow
             // 
-            this.trackBarEllbow.Location = new System.Drawing.Point(226, 318);
+            this.trackBarEllbow.Location = new System.Drawing.Point(254, 398);
             this.trackBarEllbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarEllbow.Maximum = 180;
             this.trackBarEllbow.Name = "trackBarEllbow";
-            this.trackBarEllbow.Size = new System.Drawing.Size(302, 56);
+            this.trackBarEllbow.Size = new System.Drawing.Size(340, 69);
             this.trackBarEllbow.TabIndex = 3;
             // 
             // trackBarShoulder
             // 
-            this.trackBarShoulder.Location = new System.Drawing.Point(226, 211);
+            this.trackBarShoulder.Location = new System.Drawing.Point(254, 264);
             this.trackBarShoulder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarShoulder.Maximum = 165;
             this.trackBarShoulder.Minimum = 15;
             this.trackBarShoulder.Name = "trackBarShoulder";
-            this.trackBarShoulder.Size = new System.Drawing.Size(302, 56);
+            this.trackBarShoulder.Size = new System.Drawing.Size(340, 69);
             this.trackBarShoulder.TabIndex = 2;
             this.trackBarShoulder.Value = 15;
             // 
             // trackBarBasic
             // 
-            this.trackBarBasic.Location = new System.Drawing.Point(226, 117);
+            this.trackBarBasic.Location = new System.Drawing.Point(254, 146);
             this.trackBarBasic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarBasic.Maximum = 180;
             this.trackBarBasic.Name = "trackBarBasic";
-            this.trackBarBasic.Size = new System.Drawing.Size(302, 56);
+            this.trackBarBasic.Size = new System.Drawing.Size(340, 69);
             this.trackBarBasic.TabIndex = 1;
             // 
             // tabPageConfig
@@ -425,11 +426,11 @@
             this.tabPageConfig.Controls.Add(this.cboPorts);
             this.tabPageConfig.Controls.Add(this.cmdClosePort);
             this.tabPageConfig.Controls.Add(this.cmdOpenPort);
-            this.tabPageConfig.Location = new System.Drawing.Point(4, 25);
+            this.tabPageConfig.Location = new System.Drawing.Point(4, 29);
             this.tabPageConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageConfig.Name = "tabPageConfig";
             this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageConfig.Size = new System.Drawing.Size(1044, 725);
+            this.tabPageConfig.Size = new System.Drawing.Size(1176, 909);
             this.tabPageConfig.TabIndex = 0;
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
@@ -440,16 +441,16 @@
             this.lblEnginePause.Depth = 0;
             this.lblEnginePause.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblEnginePause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblEnginePause.Location = new System.Drawing.Point(443, 33);
+            this.lblEnginePause.Location = new System.Drawing.Point(498, 41);
             this.lblEnginePause.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblEnginePause.Name = "lblEnginePause";
-            this.lblEnginePause.Size = new System.Drawing.Size(112, 24);
+            this.lblEnginePause.Size = new System.Drawing.Size(130, 27);
             this.lblEnginePause.TabIndex = 12;
             this.lblEnginePause.Text = "Motorpause";
             // 
             // numericEnginePause
             // 
-            this.numericEnginePause.Location = new System.Drawing.Point(447, 72);
+            this.numericEnginePause.Location = new System.Drawing.Point(503, 90);
             this.numericEnginePause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericEnginePause.Maximum = new decimal(new int[] {
             30,
@@ -462,7 +463,7 @@
             0,
             0});
             this.numericEnginePause.Name = "numericEnginePause";
-            this.numericEnginePause.Size = new System.Drawing.Size(107, 22);
+            this.numericEnginePause.Size = new System.Drawing.Size(120, 26);
             this.numericEnginePause.TabIndex = 11;
             this.numericEnginePause.Value = new decimal(new int[] {
             10,
@@ -477,12 +478,12 @@
             this.cmdSaveConfig.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdSaveConfig.Depth = 0;
             this.cmdSaveConfig.Icon = null;
-            this.cmdSaveConfig.Location = new System.Drawing.Point(26, 194);
+            this.cmdSaveConfig.Location = new System.Drawing.Point(29, 242);
             this.cmdSaveConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdSaveConfig.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdSaveConfig.Name = "cmdSaveConfig";
             this.cmdSaveConfig.Primary = true;
-            this.cmdSaveConfig.Size = new System.Drawing.Size(252, 36);
+            this.cmdSaveConfig.Size = new System.Drawing.Size(299, 36);
             this.cmdSaveConfig.TabIndex = 7;
             this.cmdSaveConfig.Text = "Konfiguration speichern";
             this.cmdSaveConfig.UseVisualStyleBackColor = true;
@@ -494,20 +495,20 @@
             this.lblPort.Depth = 0;
             this.lblPort.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPort.Location = new System.Drawing.Point(22, 33);
+            this.lblPort.Location = new System.Drawing.Point(25, 41);
             this.lblPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(228, 24);
+            this.lblPort.Size = new System.Drawing.Size(264, 27);
             this.lblPort.TabIndex = 6;
             this.lblPort.Text = "Wählen Sie einen Port aus";
             // 
             // cboPorts
             // 
             this.cboPorts.FormattingEnabled = true;
-            this.cboPorts.Location = new System.Drawing.Point(26, 59);
+            this.cboPorts.Location = new System.Drawing.Point(29, 74);
             this.cboPorts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPorts.Name = "cboPorts";
-            this.cboPorts.Size = new System.Drawing.Size(108, 24);
+            this.cboPorts.Size = new System.Drawing.Size(121, 28);
             this.cboPorts.TabIndex = 5;
             // 
             // cmdClosePort
@@ -516,12 +517,12 @@
             this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdClosePort.Depth = 0;
             this.cmdClosePort.Icon = null;
-            this.cmdClosePort.Location = new System.Drawing.Point(167, 87);
+            this.cmdClosePort.Location = new System.Drawing.Point(188, 109);
             this.cmdClosePort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
             this.cmdClosePort.Primary = true;
-            this.cmdClosePort.Size = new System.Drawing.Size(160, 36);
+            this.cmdClosePort.Size = new System.Drawing.Size(189, 36);
             this.cmdClosePort.TabIndex = 4;
             this.cmdClosePort.Text = "Port schließen";
             this.cmdClosePort.UseVisualStyleBackColor = true;
@@ -532,22 +533,22 @@
             this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdOpenPort.Depth = 0;
             this.cmdOpenPort.Icon = null;
-            this.cmdOpenPort.Location = new System.Drawing.Point(26, 87);
+            this.cmdOpenPort.Location = new System.Drawing.Point(29, 109);
             this.cmdOpenPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
             this.cmdOpenPort.Primary = true;
-            this.cmdOpenPort.Size = new System.Drawing.Size(135, 36);
+            this.cmdOpenPort.Size = new System.Drawing.Size(159, 36);
             this.cmdOpenPort.TabIndex = 2;
             this.cmdOpenPort.Text = "Port öffnen";
             this.cmdOpenPort.UseVisualStyleBackColor = true;
             // 
             // tabPageHelp
             // 
-            this.tabPageHelp.Location = new System.Drawing.Point(4, 25);
+            this.tabPageHelp.Location = new System.Drawing.Point(4, 29);
             this.tabPageHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageHelp.Name = "tabPageHelp";
-            this.tabPageHelp.Size = new System.Drawing.Size(1044, 725);
+            this.tabPageHelp.Size = new System.Drawing.Size(1176, 909);
             this.tabPageHelp.TabIndex = 2;
             this.tabPageHelp.Text = "Hilfe";
             this.tabPageHelp.UseVisualStyleBackColor = true;
@@ -556,11 +557,11 @@
             // 
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(11, 84);
+            this.materialTabSelector1.Location = new System.Drawing.Point(12, 105);
             this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(951, 48);
+            this.materialTabSelector1.Size = new System.Drawing.Size(1070, 60);
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
@@ -570,9 +571,9 @@
             // 
             // MainInterfacefrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 882);
+            this.ClientSize = new System.Drawing.Size(1208, 1102);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -616,7 +617,7 @@
         private System.Windows.Forms.TrackBar trackBarEllbow;
         private System.Windows.Forms.TrackBar trackBarShoulder;
         private System.Windows.Forms.TrackBar trackBarBasic;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lboMovements;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel lblPause;
