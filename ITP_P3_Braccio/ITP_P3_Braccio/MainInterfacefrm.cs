@@ -98,7 +98,6 @@ namespace ITP_P3_Braccio
         }
 
         #endregion
-<<<<<<< HEAD
 
         private void cmdAddMovement_Click(object sender, EventArgs e)
         {
@@ -111,7 +110,5 @@ namespace ITP_P3_Braccio
         {
             //lboControlList.SelectedIndex();
         }
-=======
->>>>>>> b7faeff462e96c454a1da1e7e669e6483609090a
     }
 }
