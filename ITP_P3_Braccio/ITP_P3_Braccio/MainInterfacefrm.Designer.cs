@@ -219,6 +219,7 @@
             this.cmdDelete.TabIndex = 18;
             this.cmdDelete.Text = "Bewegung löschen";
             this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
             // cmdStart
             // 
