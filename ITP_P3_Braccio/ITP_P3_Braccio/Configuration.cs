@@ -11,7 +11,6 @@ namespace ITP_P3_Braccio
         public List<SavedPosition> StandardPositions = new List<SavedPosition>();
         public int EnginePause{ get; set; }
 
-
         //return the savedPosition with the name 
         //if name doesn't exist --> return null
         public SavedPosition GetMove(string name) {
@@ -24,7 +23,6 @@ namespace ITP_P3_Braccio
             }
 
             return temp;
-
         }
     }
 }
