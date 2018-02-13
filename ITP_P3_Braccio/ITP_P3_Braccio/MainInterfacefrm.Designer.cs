@@ -44,11 +44,9 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lblPause = new MaterialSkin.Controls.MaterialLabel();
             this.nudPause = new System.Windows.Forms.NumericUpDown();
-<<<<<<< HEAD
+
             this.lboMovements = new System.Windows.Forms.ListBox();
-=======
             this.lboControlList = new System.Windows.Forms.ListBox();
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.trackBarGripper = new System.Windows.Forms.TrackBar();
@@ -58,12 +56,10 @@
             this.trackBarShoulder = new System.Windows.Forms.TrackBar();
             this.trackBarBasic = new System.Windows.Forms.TrackBar();
             this.tabPageConfig = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
-=======
             this.lblEnginePause = new MaterialSkin.Controls.MaterialLabel();
             this.numericEnginePause = new System.Windows.Forms.NumericUpDown();
             this.cmdSaveConfig = new MaterialSkin.Controls.MaterialRaisedButton();
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.lblPort = new MaterialSkin.Controls.MaterialLabel();
             this.cboPorts = new System.Windows.Forms.ComboBox();
             this.cmdClosePort = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -84,10 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarShoulder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).BeginInit();
             this.tabPageConfig.SuspendLayout();
-<<<<<<< HEAD
-=======
             ((System.ComponentModel.ISupportInitialize)(this.numericEnginePause)).BeginInit();
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -106,11 +100,9 @@
             // 
             // tabPageApplication
             // 
-<<<<<<< HEAD
+
             this.tabPageApplication.Controls.Add(this.cmdStart);
-=======
             this.tabPageApplication.Controls.Add(this.cboSavedPositions);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
             this.tabPageApplication.Controls.Add(this.cmdAddPause);
             this.tabPageApplication.Controls.Add(this.cmdAddMovement);
             this.tabPageApplication.Controls.Add(this.cmdSaveCSV);
@@ -123,11 +115,11 @@
             this.tabPageApplication.Controls.Add(this.materialLabel3);
             this.tabPageApplication.Controls.Add(this.lblPause);
             this.tabPageApplication.Controls.Add(this.nudPause);
-<<<<<<< HEAD
+
             this.tabPageApplication.Controls.Add(this.lboMovements);
-=======
+
             this.tabPageApplication.Controls.Add(this.lboControlList);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.tabPageApplication.Controls.Add(this.materialLabel2);
             this.tabPageApplication.Controls.Add(this.materialLabel1);
             this.tabPageApplication.Controls.Add(this.trackBarGripper);
@@ -162,11 +154,11 @@
             this.cmdAddPause.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdAddPause.Depth = 0;
             this.cmdAddPause.Icon = null;
-<<<<<<< HEAD
+
             this.cmdAddPause.Location = new System.Drawing.Point(23, 947);
-=======
+
             this.cmdAddPause.Location = new System.Drawing.Point(808, 552);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdAddPause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdAddPause.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdAddPause.Name = "cmdAddPause";
@@ -182,11 +174,11 @@
             this.cmdAddMovement.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdAddMovement.Depth = 0;
             this.cmdAddMovement.Icon = null;
-<<<<<<< HEAD
+
             this.cmdAddMovement.Location = new System.Drawing.Point(644, 711);
-=======
+
             this.cmdAddMovement.Location = new System.Drawing.Point(226, 662);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdAddMovement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdAddMovement.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdAddMovement.Name = "cmdAddMovement";
@@ -195,7 +187,6 @@
             this.cmdAddMovement.TabIndex = 21;
             this.cmdAddMovement.Text = "Bewegung hinzufügen";
             this.cmdAddMovement.UseVisualStyleBackColor = true;
-            this.cmdAddMovement.Click += new System.EventHandler(this.cmdAddMovement_Click);
             // 
             // cmdSaveCSV
             // 
@@ -208,11 +199,11 @@
             this.cmdSaveCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdSaveCSV.Name = "cmdSaveCSV";
             this.cmdSaveCSV.Primary = true;
-<<<<<<< HEAD
+
             this.cmdSaveCSV.Size = new System.Drawing.Size(178, 36);
-=======
+
             this.cmdSaveCSV.Size = new System.Drawing.Size(182, 36);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdSaveCSV.TabIndex = 20;
             this.cmdSaveCSV.Text = "Ablauf speichern";
             this.cmdSaveCSV.UseVisualStyleBackColor = true;
@@ -228,11 +219,10 @@
             this.cmdLoadCSV.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdLoadCSV.Name = "cmdLoadCSV";
             this.cmdLoadCSV.Primary = true;
-<<<<<<< HEAD
+
             this.cmdLoadCSV.Size = new System.Drawing.Size(145, 36);
-=======
             this.cmdLoadCSV.Size = new System.Drawing.Size(144, 36);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdLoadCSV.TabIndex = 19;
             this.cmdLoadCSV.Text = "Ablauf laden";
             this.cmdLoadCSV.UseVisualStyleBackColor = true;
@@ -275,11 +265,11 @@
             this.materialLabel6.Location = new System.Drawing.Point(18, 626);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-<<<<<<< HEAD
+
             this.materialLabel6.Size = new System.Drawing.Size(203, 27);
-=======
+
             this.materialLabel6.Size = new System.Drawing.Size(185, 24);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.materialLabel6.TabIndex = 15;
             this.materialLabel6.Text = "Handgelenk Drehung";
             // 
@@ -292,11 +282,11 @@
             this.materialLabel5.Location = new System.Drawing.Point(18, 514);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-<<<<<<< HEAD
+
             this.materialLabel5.Size = new System.Drawing.Size(230, 27);
-=======
+
             this.materialLabel5.Size = new System.Drawing.Size(177, 24);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.materialLabel5.TabIndex = 14;
             this.materialLabel5.Text = "Handgelenk vertikal";
             // 
@@ -347,7 +337,7 @@
             this.nudPause.Size = new System.Drawing.Size(120, 26);
             this.nudPause.TabIndex = 10;
             // 
-<<<<<<< HEAD
+
             // lboMovements
             // 
             this.lboMovements.FormattingEnabled = true;
@@ -357,7 +347,7 @@
             this.lboMovements.Name = "lboMovements";
             this.lboMovements.Size = new System.Drawing.Size(396, 524);
             this.lboMovements.TabIndex = 9;
-=======
+
             // lboControlList
             // 
             this.lboControlList.FormattingEnabled = true;
@@ -367,7 +357,7 @@
             this.lboControlList.Name = "lboControlList";
             this.lboControlList.Size = new System.Drawing.Size(396, 404);
             this.lboControlList.TabIndex = 9;
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             // 
             // materialLabel2
             // 
@@ -378,11 +368,11 @@
             this.materialLabel2.Location = new System.Drawing.Point(22, 52);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-<<<<<<< HEAD
+
             this.materialLabel2.Size = new System.Drawing.Size(632, 37);
-=======
+
             this.materialLabel2.Size = new System.Drawing.Size(581, 24);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.materialLabel2.TabIndex = 8;
             this.materialLabel2.Text = "Geben Sie die Position der Teile in Grad an oder wählen sie eine aus";
             // 
@@ -422,37 +412,36 @@
             // 
             // trackBarWristRot
             // 
-<<<<<<< HEAD
+
             this.trackBarWristHor.Location = new System.Drawing.Point(254, 514);
             this.trackBarWristHor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarWristHor.Name = "trackBarWristHor";
             this.trackBarWristHor.Size = new System.Drawing.Size(340, 69);
             this.trackBarWristHor.TabIndex = 4;
-=======
+
             this.trackBarWristRot.Location = new System.Drawing.Point(226, 397);
             this.trackBarWristRot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarWristRot.Maximum = 180;
             this.trackBarWristRot.Name = "trackBarWristRot";
             this.trackBarWristRot.Size = new System.Drawing.Size(302, 56);
             this.trackBarWristRot.TabIndex = 4;
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             // 
             // trackBarEllbow
             // 
-<<<<<<< HEAD
+
             this.trackBarElbow.Location = new System.Drawing.Point(254, 398);
             this.trackBarElbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarElbow.Name = "trackBarElbow";
             this.trackBarElbow.Size = new System.Drawing.Size(340, 69);
             this.trackBarElbow.TabIndex = 3;
-=======
+
             this.trackBarEllbow.Location = new System.Drawing.Point(226, 318);
             this.trackBarEllbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarEllbow.Maximum = 180;
             this.trackBarEllbow.Name = "trackBarEllbow";
             this.trackBarEllbow.Size = new System.Drawing.Size(302, 56);
             this.trackBarEllbow.TabIndex = 3;
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
             // 
             // trackBarShoulder
             // 
@@ -476,35 +465,32 @@
             // 
             // tabPageConfig
             // 
-<<<<<<< HEAD
-=======
+
             this.tabPageConfig.Controls.Add(this.lblEnginePause);
             this.tabPageConfig.Controls.Add(this.numericEnginePause);
             this.tabPageConfig.Controls.Add(this.cmdSaveConfig);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.tabPageConfig.Controls.Add(this.lblPort);
             this.tabPageConfig.Controls.Add(this.cboPorts);
             this.tabPageConfig.Controls.Add(this.cmdClosePort);
             this.tabPageConfig.Controls.Add(this.cmdOpenPort);
-<<<<<<< HEAD
+
             this.tabPageConfig.Location = new System.Drawing.Point(4, 29);
             this.tabPageConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageConfig.Name = "tabPageConfig";
             this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageConfig.Size = new System.Drawing.Size(1201, 1081);
-=======
+
             this.tabPageConfig.Location = new System.Drawing.Point(4, 25);
             this.tabPageConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageConfig.Name = "tabPageConfig";
             this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageConfig.Size = new System.Drawing.Size(1044, 725);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.tabPageConfig.TabIndex = 0;
             this.tabPageConfig.Text = "Konfiguration";
             this.tabPageConfig.UseVisualStyleBackColor = true;
-            // 
-<<<<<<< HEAD
-=======
+            //
             // lblEnginePause
             // 
             this.lblEnginePause.AutoSize = true;
@@ -559,43 +545,43 @@
             this.cmdSaveConfig.UseVisualStyleBackColor = true;
             this.cmdSaveConfig.Click += new System.EventHandler(this.cmdSaveConfig_Click);
             // 
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             // lblPort
             // 
             this.lblPort.AutoSize = true;
             this.lblPort.Depth = 0;
-<<<<<<< HEAD
+
             this.lblPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblPort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblPort.Location = new System.Drawing.Point(25, 41);
             this.lblPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(492, 46);
-=======
+
             this.lblPort.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblPort.Location = new System.Drawing.Point(22, 33);
             this.lblPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(228, 24);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.lblPort.TabIndex = 6;
             this.lblPort.Text = "Wählen Sie einen Port aus";
             // 
             // cboPorts
             // 
             this.cboPorts.FormattingEnabled = true;
-<<<<<<< HEAD
+
             this.cboPorts.Location = new System.Drawing.Point(30, 97);
             this.cboPorts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPorts.Name = "cboPorts";
             this.cboPorts.Size = new System.Drawing.Size(471, 28);
-=======
+
             this.cboPorts.Location = new System.Drawing.Point(26, 59);
             this.cboPorts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPorts.Name = "cboPorts";
             this.cboPorts.Size = new System.Drawing.Size(108, 24);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cboPorts.TabIndex = 5;
             // 
             // cmdClosePort
@@ -604,20 +590,20 @@
             this.cmdClosePort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdClosePort.Depth = 0;
             this.cmdClosePort.Icon = null;
-<<<<<<< HEAD
+
             this.cmdClosePort.Location = new System.Drawing.Point(239, 415);
-=======
+
             this.cmdClosePort.Location = new System.Drawing.Point(167, 87);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdClosePort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdClosePort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdClosePort.Name = "cmdClosePort";
             this.cmdClosePort.Primary = true;
-<<<<<<< HEAD
+
             this.cmdClosePort.Size = new System.Drawing.Size(189, 36);
-=======
+
             this.cmdClosePort.Size = new System.Drawing.Size(160, 36);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdClosePort.TabIndex = 4;
             this.cmdClosePort.Text = "Port schließen";
             this.cmdClosePort.UseVisualStyleBackColor = true;
@@ -628,20 +614,19 @@
             this.cmdOpenPort.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cmdOpenPort.Depth = 0;
             this.cmdOpenPort.Icon = null;
-<<<<<<< HEAD
+
             this.cmdOpenPort.Location = new System.Drawing.Point(30, 415);
-=======
+
             this.cmdOpenPort.Location = new System.Drawing.Point(26, 87);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdOpenPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdOpenPort.MouseState = MaterialSkin.MouseState.HOVER;
             this.cmdOpenPort.Name = "cmdOpenPort";
             this.cmdOpenPort.Primary = true;
-<<<<<<< HEAD
             this.cmdOpenPort.Size = new System.Drawing.Size(159, 36);
-=======
+
             this.cmdOpenPort.Size = new System.Drawing.Size(135, 36);
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.cmdOpenPort.TabIndex = 2;
             this.cmdOpenPort.Text = "Port öffnen";
             this.cmdOpenPort.UseVisualStyleBackColor = true;
@@ -704,10 +689,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBasic)).EndInit();
             this.tabPageConfig.ResumeLayout(false);
             this.tabPageConfig.PerformLayout();
-<<<<<<< HEAD
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.numericEnginePause)).EndInit();
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
             this.ResumeLayout(false);
 
         }
@@ -732,11 +716,11 @@
         private System.Windows.Forms.TrackBar trackBarEllbow;
         private System.Windows.Forms.TrackBar trackBarShoulder;
         private System.Windows.Forms.TrackBar trackBarBasic;
-<<<<<<< HEAD
+
         private System.Windows.Forms.ListBox lboMovements;
-=======
+
         private System.Windows.Forms.ListBox lboControlList;
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel lblPause;
@@ -751,14 +735,14 @@
         private MaterialSkin.Controls.MaterialRaisedButton cmdDelete;
         private MaterialSkin.Controls.MaterialRaisedButton cmdAddMovement;
         private MaterialSkin.Controls.MaterialRaisedButton cmdAddPause;
-<<<<<<< HEAD
+
         private System.Windows.Forms.Button cmdStart;
-=======
+
         private System.Windows.Forms.ComboBox cboSavedPositions;
         private MaterialSkin.Controls.MaterialRaisedButton cmdSaveConfig;
         private MaterialSkin.Controls.MaterialLabel lblEnginePause;
         private System.Windows.Forms.NumericUpDown numericEnginePause;
->>>>>>> bc3e1200a61b8b1893ac424daf9d165a73f66b92
+
     }
 }
 
