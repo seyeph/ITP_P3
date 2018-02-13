@@ -101,7 +101,7 @@ namespace ITP_P3_Braccio
 
         public static bool WriteMovement(string path, ControlList list)
         {
-
+            return true;
         }
     }
 }
