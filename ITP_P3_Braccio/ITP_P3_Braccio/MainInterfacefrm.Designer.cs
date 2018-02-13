@@ -413,6 +413,13 @@
             // 
             // trackBarWristRot
             // 
+
+            this.trackBarWristHor.Location = new System.Drawing.Point(254, 514);
+            this.trackBarWristHor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarWristHor.Name = "trackBarWristHor";
+            this.trackBarWristHor.Size = new System.Drawing.Size(340, 69);
+            this.trackBarWristHor.TabIndex = 4;
+
             this.trackBarWristRot.Location = new System.Drawing.Point(226, 397);
             this.trackBarWristRot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarWristRot.Maximum = 180;
@@ -423,6 +430,13 @@
             // 
             // trackBarEllbow
             // 
+
+            this.trackBarElbow.Location = new System.Drawing.Point(254, 398);
+            this.trackBarElbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarElbow.Name = "trackBarElbow";
+            this.trackBarElbow.Size = new System.Drawing.Size(340, 69);
+            this.trackBarElbow.TabIndex = 3;
+
             this.trackBarEllbow.Location = new System.Drawing.Point(226, 318);
             this.trackBarEllbow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBarEllbow.Maximum = 180;
